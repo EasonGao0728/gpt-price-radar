@@ -3,7 +3,7 @@
   "base": "USD",
   "provider": "Frankfurter / central-bank aggregate",
   "sourceUrl": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=AED,ALL,AMD,ARS,AUD,AZN,BAM,BBD,BDT,BGN,BHD,BOB,BRL,BSD,BWP,CAD,CHF,CLP,CNY,COP,CRC,CZK,DKK,DOP,DZD,EGP,EUR,FJD,GBP,GEL,GHS,GTQ,HKD,HNL,HUF,IDR,ILS,INR,IQD,ISK,JMD,JOD,JPY,KES,KHR,KRW,KWD,KZT,LAK,LKR,MAD,MDL,MKD,MNT,MUR,MXN,MYR,NGN,NIO,NOK,NPR,NZD,OMR,PEN,PHP,PKR,PLN,PYG,QAR,RON,RSD,SAR,SEK,SGD,THB,TND,TRY,TWD,TZS,UAH,UGX,UYU,UZS,VND,ZAR,ZMW&expand=providers&date=2026-10-24",
-  "fetchedAt": "2026-10-24T05:01:57.755Z",
+  "fetchedAt": "2026-10-24T05:05:25.202Z",
   "frequency": "daily",
   "rates": {
     "AED": {
@@ -436,7 +436,7 @@
       ]
     },
     "AUD": {
-      "rate": 1.4255,
+      "rate": 1.4254,
       "date": "2026-10-24",
       "providers": [
         {
@@ -461,8 +461,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 1.4258
+          "date": "2026-10-24",
+          "rate": 1.4215
         },
         {
           "key": "BCCCD",
@@ -1480,8 +1480,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 1.4034
+          "date": "2026-10-24",
+          "rate": 1.3987
         },
         {
           "key": "BCCCD",
@@ -1847,7 +1847,7 @@
       ]
     },
     "CHF": {
-      "rate": 0.82265,
+      "rate": 0.82267,
       "date": "2026-10-24",
       "providers": [
         {
@@ -1872,8 +1872,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 0.8235
+          "date": "2026-10-24",
+          "rate": 0.8249
         },
         {
           "key": "BCCCD",
@@ -2319,8 +2319,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 6.6748
+          "date": "2026-10-24",
+          "rate": 6.6703
         },
         {
           "key": "BCCCD",
@@ -2963,8 +2963,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 6.6731
+          "date": "2026-10-24",
+          "rate": 6.675
         },
         {
           "key": "BCEAO",
@@ -3488,8 +3488,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 0.89278
+          "date": "2026-10-24",
+          "rate": 0.89302
         },
         {
           "key": "BCCCD",
@@ -3946,7 +3946,7 @@
       ]
     },
     "GBP": {
-      "rate": 0.74682,
+      "rate": 0.74681,
       "date": "2026-10-24",
       "providers": [
         {
@@ -3976,8 +3976,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 0.74808
+          "date": "2026-10-24",
+          "rate": 0.74755
         },
         {
           "key": "BCCCD",
@@ -5835,8 +5835,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 3464.14,
+          "date": "2026-10-24",
+          "rate": 3520.99,
           "excluded": true
         },
         {
@@ -7189,8 +7189,8 @@
       ]
     },
     "MXN": {
-      "rate": 18.7435,
-      "date": "2026-10-23",
+      "rate": 18.7416,
+      "date": "2026-10-24",
       "providers": [
         {
           "key": "BANXICO",
@@ -7204,8 +7204,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 18.7098
+          "date": "2026-10-24",
+          "rate": 18.6599
         },
         {
           "key": "BCP",
@@ -7624,7 +7624,7 @@
       ]
     },
     "NOK": {
-      "rate": 9.3518,
+      "rate": 9.3514,
       "date": "2026-10-24",
       "providers": [
         {
@@ -7649,8 +7649,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 9.3548
+          "date": "2026-10-24",
+          "rate": 9.329
         },
         {
           "key": "BCEAO",
@@ -9453,7 +9453,7 @@
       ]
     },
     "SEK": {
-      "rate": 9.9174,
+      "rate": 9.9175,
       "date": "2026-10-24",
       "providers": [
         {
@@ -9478,8 +9478,8 @@
         },
         {
           "key": "BCC",
-          "date": "2026-10-23",
-          "rate": 9.9186
+          "date": "2026-10-24",
+          "rate": 9.9268
         },
         {
           "key": "BCEAO",
