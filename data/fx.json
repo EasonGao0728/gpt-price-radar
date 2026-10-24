@@ -3,7 +3,7 @@
   "base": "USD",
   "provider": "Frankfurter / central-bank aggregate",
   "sourceUrl": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=AED,ALL,AMD,ARS,AUD,AZN,BAM,BBD,BDT,BGN,BHD,BOB,BRL,BSD,BWP,CAD,CHF,CLP,CNY,COP,CRC,CZK,DKK,DOP,DZD,EGP,EUR,FJD,GBP,GEL,GHS,GTQ,HKD,HNL,HUF,IDR,ILS,INR,IQD,ISK,JMD,JOD,JPY,KES,KHR,KRW,KWD,KZT,LAK,LKR,MAD,MDL,MKD,MNT,MUR,MXN,MYR,NGN,NIO,NOK,NPR,NZD,OMR,PEN,PHP,PKR,PLN,PYG,QAR,RON,RSD,SAR,SEK,SGD,THB,TND,TRY,TWD,TZS,UAH,UGX,UYU,UZS,VND,ZAR,ZMW&expand=providers&date=2026-10-24",
-  "fetchedAt": "2026-10-24T05:05:25.202Z",
+  "fetchedAt": "2026-10-24T06:51:09.527Z",
   "frequency": "daily",
   "rates": {
     "AED": {
