@@ -1,0 +1,29 @@
+name: Price observation / 报价核验
+description: 提交具有周期与税费证据的地区订阅报价
+title: '[price] 地区 / 渠道 / 套餐'
+body:
+  - type: input
+    id: market
+    attributes:
+      label: 地区、渠道与套餐档位
+    validations:
+      required: true
+  - type: input
+    id: amount
+    attributes:
+      label: 当地价格、币种与订阅周期
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 周期、标准价格与税费证据
+      description: 提供来源链接或去除个人信息的截图。不要上传账单地址、邮箱、卡号或令牌。
+    validations:
+      required: true
+  - type: textarea
+    id: conditions
+    attributes:
+      label: 核验时间与适用条件
+    validations:
+      required: true

@@ -1,0 +1,11 @@
+import { mkdir, cp, readFile } from 'node:fs/promises';
+import { validateDataset, validateFx } from '../src/domain.mjs';
+const root = new URL('../', import.meta.url);
+validateDataset(JSON.parse(await readFile(new URL('data/prices.json', root), 'utf8')));
+validateFx(JSON.parse(await readFile(new URL('data/fx.json', root), 'utf8')));
+await mkdir(new URL('dist/', root), { recursive: true });
+await cp(new URL('public/', root), new URL('dist/', root), { recursive: true });
+await cp(new URL('src/', root), new URL('dist/lib/', root), { recursive: true });
+await cp(new URL('data/', root), new URL('dist/data/', root), { recursive: true });
+for (const file of ['README.md', 'LICENSE', 'CONTRIBUTING.md']) await cp(new URL(file, root), new URL(`dist/${file}`, root));
+console.log('Built dist/ with application, data and open-source documentation.');

@@ -1,0 +1,16 @@
+{
+  "name": "gpt-price-radar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Traceable regional ChatGPT subscription prices and currency comparisons",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs",
+    "update": "node scripts/update.mjs"
+  },
+  "license": "MIT"
+}
