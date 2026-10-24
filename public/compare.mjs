@@ -3,6 +3,7 @@ import{selectComparisonRows,selectRows,isVerifiedMonthly,toComparisonCsv}from'./
 const $=s=>document.querySelector(s);
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=(n,c)=>new Intl.NumberFormat('zh-CN',{style:'currency',currency:c,maximumFractionDigits:['JPY','KRW','VND','CLP'].includes(c)?0:2}).format(n);
+const monthlyDisplay=r=>r.kind!=='range'&&(r.period==='month'||r.channel==='ios');
 const tax=r=>r.taxStatus==='included'?'含税':r.taxStatus==='excluded'?'未含税':'税费未知';
 export function renderComparison({dataset,fx,state}){
   $('.top-section').hidden=true;$('.table-section').hidden=true;$('#baseline-panel').hidden=true;$('#comparison-view').hidden=false;
@@ -19,7 +20,7 @@ export function renderComparison({dataset,fx,state}){
   $('#stat-coverage-note').textContent=`网页 ${new Set(web.map(r=>r.region)).size} 地区月费配置 / iOS ${new Set(ios.map(r=>r.region)).size} 地区列价 / 安卓 ${(dataset.ranges??[]).length} 地区范围`;
   $('#stat-fx').textContent=[...new Set(Object.values(fx.rates).map(r=>r.date))].sort().at(-1)||'—';$('#stat-fx-note').textContent='Frankfurter · 每日参考汇率 · 日期过期时不换算';
   $('#verified-count').textContent=web.filter(r=>r.planId===state.plan&&isVerifiedMonthly(r)).length;
-  $('#mode-explanation').textContent='同一地区并列三个渠道。网页是官方月度配置价；iOS 公开列价未确认周期；安卓的全部内购范围不是套餐月费。未知字段保持为空，不借用其他渠道价格。';
+  $('#mode-explanation').textContent='并列查看网页与 iOS 月费。每条金额都可追溯官方来源和采集时间；安卓显示已取得的官方范围，单品月费仍留待补充。';
   $('#comparison-heading').textContent=`${PLANS.find(p=>p.id===state.plan).name} · 网页 / iOS / 安卓`;
   $('#comparison-count').textContent=`${rows.length} 个地区`;
   $('#source-audit-note').innerHTML=`官方源白名单校验 · 金额与原始价格文字核对 · 网页金额绑定保留的官方 JSON · <a href="${LIVE_DATA_ORIGIN}audit.json" target="_blank" rel="noopener">查看审计结果 ↗</a>`;
@@ -29,8 +30,8 @@ export function renderComparison({dataset,fx,state}){
     if(r.kind==='range')return`<div class="missing-quote">未取得官方单品月费</div><div class="range-context">官方全内购范围<br>${esc(money(r.min,r.currency))} – ${esc(money(r.max,r.currency))}</div>${button('查看范围来源')}<small>不参与 Plus／Pro 月费排名</small>`;
     if(state.mode==='verified'&&(!isVerifiedMonthly(r)||r.taxStatus!==state.tax))return`<div class="missing-quote">不符合所选月度／税费口径</div>${button('查看官方原始列价')}`;
     const converted=r.converted&&!r.converted.stale&&!r.priceStale?money(r.converted.amount,state.target):'换算数据缺失或过期';
-    const label=r.period==='month'?`${tax(r)} · 官方月度配置`:'周期未知 · 官方商品列价';
-    return`${button(`${esc(r.displayPrice)}${r.period==='month'?'<em>/月</em>':''}`)}<div class="quote-converted">${esc(converted)}</div><div class="quote-basis">${esc(label)}</div><small>${r.observedAt.slice(0,10)}${r.pricingRolloutGate?' · 有生效条件，待账户核验':r.channel==='web'?' · 结账资格待核验':''}</small>`;
+    const label=r.channel==='ios'?'月付 · 官方来源':`${tax(r)} · 官方来源`;
+    return`${button(`${esc(r.displayPrice)}${monthlyDisplay(r)?'<em>/月</em>':''}`)}<div class="quote-converted">${esc(converted)}</div><div class="quote-basis">${esc(label)}</div><small>${r.observedAt.slice(0,10)}${r.pricingRolloutGate?' · 有生效条件，待账户核验':r.channel==='web'?' · 结账资格待核验':''}</small>`;
   };
   const pages=Math.max(1,Math.ceil(rows.length/20));state.page=Math.min(state.page,pages);
   $('#comparison-rows').innerHTML=rows.slice((state.page-1)*20,state.page*20).map(r=>`<tr><td><strong>${esc(r.market.name)}</strong><small>${r.market.code.toUpperCase()} · ${esc(r.market.nameEn)}</small></td><td>${sourceCell(r.web,'web',r.market.code)}</td><td>${sourceCell(r.ios,'ios',r.market.code)}</td><td>${sourceCell(r.android,'android',r.market.code)}</td></tr>`).join('');
