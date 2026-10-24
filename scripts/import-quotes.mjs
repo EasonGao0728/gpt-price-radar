@@ -1,0 +1,15 @@
+import { readFile, writeFile, rename } from 'node:fs/promises';
+import { validateDataset } from '../src/domain.mjs';
+const file = process.argv[2];
+if (!file) throw new Error('Usage: node scripts/import-quotes.mjs reviewed-quotes.json');
+const imported = JSON.parse(await readFile(file, 'utf8'));
+if (!Array.isArray(imported.quotes) || imported.quotes.some(q => q.origin !== 'reviewed_submission')) throw new Error('Each quote must have origin=reviewed_submission and complete evidence');
+const target = new URL('../data/quotes.json', import.meta.url);
+const existing = JSON.parse(await readFile(target, 'utf8'));
+const merged = new Map(existing.quotes.map(q => [q.id,q]));
+for (const quote of imported.quotes) merged.set(quote.id, quote);
+const quotes = [...merged.values()];
+validateDataset({schemaVersion:2,observations:quotes,ranges:[],markets:[]});
+await writeFile(new URL('../data/quotes.json.tmp',import.meta.url),JSON.stringify({schemaVersion:1,quotes},null,2)+'\n');
+await rename(new URL('../data/quotes.json.tmp',import.meta.url),target);
+console.log(`Imported ${imported.quotes.length} reviewed quotes. Run npm run update to merge the published dataset.`);

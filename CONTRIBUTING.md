@@ -42,6 +42,23 @@
 
 ## 代码与验证
 
+## 网页和安卓单品报价导入字段
+
+将审核后的记录放在 `{ "quotes": [记录] }` 中，通过 `npm run import:quotes -- 文件路径` 导入。记录必须包含：
+
+- `id`：唯一 ID，例如 `reviewed-web-in-plus-20261024`；`origin` 必须为 `reviewed_submission`。
+- `region`：已配置的小写地区代码；`channel` 为 `web`、`android` 或 `ios`。
+- `planId`、`sourceName`、`amount`、`currency`、`displayPrice`。
+- `sourceUrl`（HTTPS 原始证据）、`sourceSha256`（原证据 SHA-256）、`observedAt`（真实观测 ISO 时间）。
+- `reviewedAt` 与 `periodEvidence`（HTTPS 链接及明确的周期说明）。
+- `period`、`verification`、`taxStatus`、`offerType`：不确定的字段仍为 `unknown` / `observed`。
+
+只有税费、周期、标准续费价都已核验的记录，才能设为 `verification: "verified"` 并补充 `taxEvidence`。来源页面的金额必须对应具体地区与渠道。不要用 Google Play 全内购范围代替套餐报价，不要把 GLOBAL 美元价格分发到各地区。
+
+自动采集保留 `data/quotes.json` 的审核报价，不会刷新其原观测时间。超过价格有效期后仍会退出当前排名，需要重新核验。
+
+## 代码检查
+
 Node 22+，无依赖安装步骤：
 
 ```bash

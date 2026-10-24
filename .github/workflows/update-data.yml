@@ -11,7 +11,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,8 +23,10 @@ jobs:
       - name: Collect prices and FX
         id: collect
         continue-on-error: true
-        run: npm run update
+        run: npm run update -- --allow-partial
       - run: npm run validate
+      - name: Write collection summary
+        run: node scripts/report.mjs >> "$GITHUB_STEP_SUMMARY"
       - name: Commit valid observations, including partial failures
         run: |
           git config user.name 'gpt-price-radar[bot]'

@@ -2,10 +2,1160 @@
   "schemaVersion": 1,
   "base": "USD",
   "provider": "Frankfurter / central-bank aggregate",
-  "sourceUrl": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=CNY,JPY,INR,TRY,BRL,GBP,EUR,TWD,HKD,KRW&expand=providers",
-  "fetchedAt": "2026-10-24T03:55:13.169Z",
+  "sourceUrl": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=AED,ALL,AMD,ARS,AUD,AZN,BAM,BBD,BDT,BGN,BHD,BOB,BRL,BSD,BWP,CAD,CHF,CLP,CNY,COP,CRC,CZK,DKK,DOP,DZD,EGP,EUR,FJD,GBP,GEL,GHS,GTQ,HKD,HNL,HUF,IDR,ILS,INR,IQD,ISK,JMD,JOD,JPY,KES,KHR,KRW,KWD,KZT,LAK,LKR,MAD,MDL,MKD,MNT,MUR,MXN,MYR,NGN,NIO,NOK,NPR,NZD,OMR,PEN,PHP,PKR,PLN,PYG,QAR,RON,RSD,SAR,SEK,SGD,THB,TND,TRY,TWD,TZS,UAH,UGX,UYU,UZS,VND,ZAR,ZMW&expand=providers&date=2026-10-24",
+  "fetchedAt": "2026-10-24T05:01:57.755Z",
   "frequency": "daily",
   "rates": {
+    "AED": {
+      "rate": 3.6725,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "BCCCD",
+          "date": "2026-10-23",
+          "rate": 3.6725,
+          "excluded": true
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 3.6725,
+          "excluded": true
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 3.6729,
+          "excluded": true
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 3.6799,
+          "excluded": true
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 3.6725,
+          "excluded": true
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 3.6729,
+          "excluded": true
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 3.6715,
+          "excluded": true
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 3.6726,
+          "excluded": true
+        },
+        {
+          "key": "BNRRW",
+          "date": "2026-10-23",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 3.6726,
+          "excluded": true
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 3.6732,
+          "excluded": true
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 3.6733,
+          "excluded": true
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 3.6723,
+          "excluded": true
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 3.6734,
+          "excluded": true
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "CBN",
+          "date": "2026-10-22",
+          "rate": 3.6732,
+          "excluded": true
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 3.6725,
+          "excluded": true
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 3.6726,
+          "excluded": true
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 3.6863,
+          "excluded": true
+        },
+        {
+          "key": "DAB",
+          "date": "2026-10-24",
+          "rate": 3.6875,
+          "excluded": true
+        },
+        {
+          "key": "FBIL",
+          "date": "2026-10-16",
+          "rate": 3.6729,
+          "excluded": true
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-22",
+          "rate": 3.6725,
+          "excluded": true
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 3.6731,
+          "excluded": true
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 3.6534,
+          "excluded": true
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 3.6548,
+          "excluded": true
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 3.6725,
+          "excluded": true
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 3.6727,
+          "excluded": true
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 3.6737,
+          "excluded": true
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 3.6725,
+          "excluded": true
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 3.6728,
+          "excluded": true
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 3.6728,
+          "excluded": true
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 3.6727,
+          "excluded": true
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 3.673,
+          "excluded": true
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 3.6725,
+          "excluded": true
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 3.6729,
+          "excluded": true
+        }
+      ]
+    },
+    "ALL": {
+      "rate": 80.77,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 80.91
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 80.58
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 80.82
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 80.82
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 80.72
+        }
+      ]
+    },
+    "AMD": {
+      "rate": 360.96,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 361.48
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 361.14
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 361.5
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 361.33
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 360.95
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 362.06
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 358.93
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 361.48
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 362.02
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 361.09
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 361.01
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 359
+        }
+      ]
+    },
+    "ARS": {
+      "rate": 1526.88,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 1527.74
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 1529.11
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 1528
+        },
+        {
+          "key": "BCV",
+          "date": "2026-10-23",
+          "rate": 1528
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 1527.71
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 1527.32
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 1524.75
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 1524.27
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 1524.94
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 1526.96
+        }
+      ]
+    },
+    "AUD": {
+      "rate": 1.4255,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "AMCM",
+          "date": "2026-10-23",
+          "rate": 1.4245
+        },
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 1.4247
+        },
+        {
+          "key": "BCB",
+          "date": "2026-10-23",
+          "rate": 1.4215
+        },
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 1.4239
+        },
+        {
+          "key": "BCC",
+          "date": "2026-10-23",
+          "rate": 1.4258
+        },
+        {
+          "key": "BCCCD",
+          "date": "2026-10-23",
+          "rate": 1.4233
+        },
+        {
+          "key": "BCCH",
+          "date": "2026-10-23",
+          "rate": 1.4242
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 1.4261
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 1.4223
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 1.4239
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 1.424
+        },
+        {
+          "key": "BDL",
+          "date": "2026-10-23",
+          "rate": 1.4239
+        },
+        {
+          "key": "BFM",
+          "date": "2026-10-23",
+          "rate": 1.4246
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 1.4259
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 1.4242
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-22",
+          "rate": 1.4222
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 1.4255
+        },
+        {
+          "key": "BNRRW",
+          "date": "2026-10-23",
+          "rate": 1.4271
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 1.4223
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 1.4264
+        },
+        {
+          "key": "BOI",
+          "date": "2026-10-23",
+          "rate": 1.4247
+        },
+        {
+          "key": "BOJA",
+          "date": "2026-10-23",
+          "rate": 1.486
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 1.4247
+        },
+        {
+          "key": "BOMU",
+          "date": "2026-10-22",
+          "rate": 1.3876
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 1.4254
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 1.4235
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 1.4265
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 1.4251
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 1.4321
+        },
+        {
+          "key": "CBBH",
+          "date": "2026-10-24",
+          "rate": 1.424
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 1.4266
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 1.4278
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 1.4337
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 1.4274
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 1.4255
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 1.4239
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 1.4252
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 1.4249
+        },
+        {
+          "key": "CBS",
+          "date": "2026-10-22",
+          "rate": 1.4237
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 1.4257
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 1.4221
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 1.4299
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 1.424
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 1.4262
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 1.424
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 1.4388
+        },
+        {
+          "key": "HNB",
+          "date": "2026-10-23",
+          "rate": 1.4261
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 1.4273
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 1.424
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 1.4258
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 1.4257
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 1.424
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 1.418
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 1.4194
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 1.4259
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 1.4267
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 1.4367
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 1.4265
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 1.4258
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 1.4255
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 1.4261
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 1.4274
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 1.4249
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 1.4274
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 1.4257
+        },
+        {
+          "key": "NRBT",
+          "date": "2026-10-23",
+          "rate": 1.4314
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 1.4253
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 1.424
+        },
+        {
+          "key": "RBA",
+          "date": "2026-10-23",
+          "rate": 1.4273
+        },
+        {
+          "key": "RBF",
+          "date": "2026-10-22",
+          "rate": 1.4227
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 1.4243
+        },
+        {
+          "key": "RBV",
+          "date": "2026-10-23",
+          "rate": 1.425
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 1.4244
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 1.424
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 1.4259
+        }
+      ]
+    },
+    "AZN": {
+      "rate": 1.6995,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 1.7
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 1.7
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 1.7
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 1.7
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 1.7
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 1.6997
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 1.695
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 1.7
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 1.6994
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 1.7005
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 1.7
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 1.6997
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 1.7
+        }
+      ]
+    },
+    "BAM": {
+      "rate": 1.7428,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 1.7474,
+          "excluded": true
+        },
+        {
+          "key": "CBBH",
+          "date": "2026-10-24",
+          "rate": 1.7474,
+          "excluded": true
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 1.7414,
+          "excluded": true
+        },
+        {
+          "key": "HNB",
+          "date": "2026-10-23",
+          "rate": 1.7455,
+          "excluded": true
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 1.7446,
+          "excluded": true
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 1.7447,
+          "excluded": true
+        }
+      ]
+    },
+    "BBD": {
+      "rate": 2.0362,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 2
+        },
+        {
+          "key": "BOJA",
+          "date": "2026-10-23",
+          "rate": 2.0839
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 2.0141
+        },
+        {
+          "key": "CBTT",
+          "date": "2026-10-23",
+          "rate": 2.0689
+        },
+        {
+          "key": "CBVS",
+          "date": "2026-10-13",
+          "rate": 2.0148
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 2.0147
+        }
+      ]
+    },
+    "BDT": {
+      "rate": 123.67,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 123.66
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 123.69
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 123.67
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 123.65
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 123.71
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 123.67
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 123.67
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 123.69
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 123.71
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 123.56
+        }
+      ]
+    },
+    "BHD": {
+      "rate": 0.376,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 0.37716,
+          "excluded": true
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 0.37804,
+          "excluded": true
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 0.37613,
+          "excluded": true
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 0.37735,
+          "excluded": true
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 0.37608,
+          "excluded": true
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 0.37728,
+          "excluded": true
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 0.37608,
+          "excluded": true
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 0.37735,
+          "excluded": true
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 0.3773,
+          "excluded": true
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 0.37775,
+          "excluded": true
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 0.37745,
+          "excluded": true
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 0.3773,
+          "excluded": true
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 0.3773,
+          "excluded": true
+        }
+      ]
+    },
+    "BOB": {
+      "rate": 11.7824,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 11.84
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 11.8399
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 11.75
+        },
+        {
+          "key": "BCV",
+          "date": "2026-10-23",
+          "rate": 11.7
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 11.84
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 11.84
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 11.7548
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 11.75
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 11.7268
+        }
+      ]
+    },
     "BRL": {
       "rate": 5.0388,
       "date": "2026-10-23",
@@ -212,9 +1362,945 @@
         }
       ]
     },
+    "BSD": {
+      "rate": 1.0084,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 1
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 1
+        },
+        {
+          "key": "BOJA",
+          "date": "2026-10-23",
+          "rate": 1.042
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 1
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 0.99992
+        }
+      ]
+    },
+    "BWP": {
+      "rate": 13.6092,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 13.9275
+        },
+        {
+          "key": "BM",
+          "date": "2026-10-23",
+          "rate": 13.0163
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 13.624
+        },
+        {
+          "key": "BOB",
+          "date": "2026-10-23",
+          "rate": 13.3869
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 12.9366
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 14.2652
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 13.3869
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 13.6971
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 14.1243
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 13.7274
+        }
+      ]
+    },
+    "CAD": {
+      "rate": 1.4012,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "AMCM",
+          "date": "2026-10-23",
+          "rate": 1.4003
+        },
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 1.4007
+        },
+        {
+          "key": "BANXICO",
+          "date": "2026-10-22",
+          "rate": 1.3987
+        },
+        {
+          "key": "BCB",
+          "date": "2026-10-23",
+          "rate": 1.3995
+        },
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 1.4007
+        },
+        {
+          "key": "BCC",
+          "date": "2026-10-23",
+          "rate": 1.4034
+        },
+        {
+          "key": "BCCCD",
+          "date": "2026-10-23",
+          "rate": 1.4063
+        },
+        {
+          "key": "BCCH",
+          "date": "2026-10-23",
+          "rate": 1.4007
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 1.4034
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 1.398
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 1.4005
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 1.4052
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 1.4008
+        },
+        {
+          "key": "BCV",
+          "date": "2026-10-23",
+          "rate": 1.4027
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 1.3995
+        },
+        {
+          "key": "BDL",
+          "date": "2026-10-23",
+          "rate": 1.4014
+        },
+        {
+          "key": "BFM",
+          "date": "2026-10-23",
+          "rate": 1.4001
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 1.4018
+        },
+        {
+          "key": "BM",
+          "date": "2026-10-23",
+          "rate": 1.3976
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 1.4
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-22",
+          "rate": 1.4043
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 1.4003
+        },
+        {
+          "key": "BNRRW",
+          "date": "2026-10-23",
+          "rate": 1.401
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 1.3993
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 1.4033
+        },
+        {
+          "key": "BOI",
+          "date": "2026-10-23",
+          "rate": 1.4015
+        },
+        {
+          "key": "BOJA",
+          "date": "2026-10-23",
+          "rate": 1.3909
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 1.4012
+        },
+        {
+          "key": "BOMU",
+          "date": "2026-10-22",
+          "rate": 1.3746
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 1.4054
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 1.406
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 1.4012
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 1.4005
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 1.4081
+        },
+        {
+          "key": "CBBH",
+          "date": "2026-10-24",
+          "rate": 1.3995
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 1.4031
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 1.4047
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 1.4097
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 1.403
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 1.4035
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 1.4013
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 1.4034
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 1.4057
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 1.4009
+        },
+        {
+          "key": "CBTT",
+          "date": "2026-10-23",
+          "rate": 1.3131,
+          "excluded": true
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 1.4051
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 1.4053
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 1.3997
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 1.4034
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 1.3995
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 1.4157
+        },
+        {
+          "key": "HNB",
+          "date": "2026-10-23",
+          "rate": 1.4034
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-21",
+          "rate": 1.4057
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 1.3995
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 1.4006
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 1.4018
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 1.3995
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 1.3948
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 1.3965
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 1.4028
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 1.4031
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 1.4162
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 1.4029
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 1.4015
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 1.4023
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 1.4034
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 1.4014
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 1.4
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 1.4038
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 1.4024
+        },
+        {
+          "key": "NRBT",
+          "date": "2026-10-23",
+          "rate": 1.3981
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 1.4032
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 1.3995
+        },
+        {
+          "key": "RBA",
+          "date": "2026-10-23",
+          "rate": 1.4014
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 1.4008
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 1.4012
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 1.3994
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 1.4024
+        }
+      ]
+    },
+    "CHF": {
+      "rate": 0.82265,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "AMCM",
+          "date": "2026-10-23",
+          "rate": 0.8203
+        },
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 0.82325
+        },
+        {
+          "key": "BCB",
+          "date": "2026-10-23",
+          "rate": 0.8248
+        },
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 0.8217
+        },
+        {
+          "key": "BCC",
+          "date": "2026-10-23",
+          "rate": 0.8235
+        },
+        {
+          "key": "BCCCD",
+          "date": "2026-10-23",
+          "rate": 0.82527
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 0.82203
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 0.8244
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 0.8212
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 0.82505
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 0.8205
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 0.82435
+        },
+        {
+          "key": "BDL",
+          "date": "2026-10-23",
+          "rate": 0.8233
+        },
+        {
+          "key": "BFM",
+          "date": "2026-10-23",
+          "rate": 0.82435
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 0.82095
+        },
+        {
+          "key": "BM",
+          "date": "2026-10-23",
+          "rate": 0.82242
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 0.8245
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-22",
+          "rate": 0.82446
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 0.8223
+        },
+        {
+          "key": "BNRRW",
+          "date": "2026-10-23",
+          "rate": 0.82145
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 0.82462
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 0.82347
+        },
+        {
+          "key": "BOI",
+          "date": "2026-10-23",
+          "rate": 0.82311
+        },
+        {
+          "key": "BOJA",
+          "date": "2026-10-23",
+          "rate": 0.8581
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 0.8228
+        },
+        {
+          "key": "BOMU",
+          "date": "2026-10-22",
+          "rate": 0.82301
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 0.82426
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 0.8243
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 0.82153
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 0.82369
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 0.82456
+        },
+        {
+          "key": "CBBH",
+          "date": "2026-10-24",
+          "rate": 0.82435
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 0.821
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 0.81079
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 0.82531
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 0.82376
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 0.82275
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 0.8232
+        },
+        {
+          "key": "CBN",
+          "date": "2026-10-22",
+          "rate": 0.8236
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 0.82275
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 0.8199
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 0.821
+        },
+        {
+          "key": "CBTT",
+          "date": "2026-10-13",
+          "rate": 0.79187
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 0.8246
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 0.82218
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 0.8244
+        },
+        {
+          "key": "DAB",
+          "date": "2026-10-24",
+          "rate": 0.83341
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 0.82205
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 0.82435
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 0.8243
+        },
+        {
+          "key": "HNB",
+          "date": "2026-10-23",
+          "rate": 0.82204
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 0.82358
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 0.82435
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 0.82107
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 0.82
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 0.82435
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 0.81531
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 0.81851
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 0.82131
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 0.82109
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 0.82414
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 0.8212
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 0.81996
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 0.82059
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 0.82204
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 0.82185
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 0.8244
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 0.82225
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 0.82084
+        },
+        {
+          "key": "NRBT",
+          "date": "2026-10-23",
+          "rate": 0.81492
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 0.8224
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 0.82435
+        },
+        {
+          "key": "RBA",
+          "date": "2026-10-23",
+          "rate": 0.82158
+        },
+        {
+          "key": "RBF",
+          "date": "2026-10-22",
+          "rate": 0.8243
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 0.79796
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 0.82318
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 0.82433
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 0.82088
+        }
+      ]
+    },
+    "CLP": {
+      "rate": 985.47,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 985.85
+        },
+        {
+          "key": "BCCH",
+          "date": "2026-10-23",
+          "rate": 986.58
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 988.8
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 985.5
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 985.74
+        },
+        {
+          "key": "BCV",
+          "date": "2026-10-23",
+          "rate": 986.57
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 986.51
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 980.89
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 986.58
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 981.72
+        }
+      ]
+    },
     "CNY": {
-      "rate": 6.6669,
-      "date": "2026-10-25",
+      "rate": 6.6666,
+      "date": "2026-10-24",
       "providers": [
         {
           "key": "AMCM",
@@ -333,7 +2419,7 @@
         },
         {
           "key": "BOM",
-          "date": "2026-10-25",
+          "date": "2026-10-24",
           "rate": 6.671
         },
         {
@@ -448,8 +2534,8 @@
         },
         {
           "key": "DAB",
-          "date": "2026-10-22",
-          "rate": 6.5596
+          "date": "2026-10-24",
+          "rate": 6.5469
         },
         {
           "key": "DNB",
@@ -543,8 +2629,8 @@
         },
         {
           "key": "NBT",
-          "date": "2026-10-23",
-          "rate": 6.674
+          "date": "2026-10-24",
+          "rate": 6.6693
         },
         {
           "key": "NBU",
@@ -593,9 +2679,787 @@
         }
       ]
     },
+    "COP": {
+      "rate": 3179.39,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BANREP",
+          "date": "2026-10-23",
+          "rate": 3185.01
+        },
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 3182.8
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 3150.13
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 3176.7
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 3174.14
+        },
+        {
+          "key": "BCV",
+          "date": "2026-10-23",
+          "rate": 3187.8
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 3180.38
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 3208.33
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 3169.19
+        }
+      ]
+    },
+    "CRC": {
+      "rate": 455.26,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCCR",
+          "date": "2026-10-23",
+          "rate": 456.32
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 455.25
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 453
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 456.3
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 455.45
+        }
+      ]
+    },
+    "CZK": {
+      "rate": 21.672,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 21.65
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 21.629
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 21.734
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 21.731
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 21.714
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 21.624
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 21.691
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 21.725
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 21.656
+        },
+        {
+          "key": "CBBH",
+          "date": "2026-10-24",
+          "rate": 21.734
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 21.585
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 21.69
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 21.586
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 21.651
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 21.658
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 21.606
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 21.741
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 21.652
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 21.734
+        },
+        {
+          "key": "HNB",
+          "date": "2026-10-23",
+          "rate": 21.651
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 21.741
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 21.734
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 21.619
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 21.734
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 21.623
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 21.619
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 21.64
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 21.627
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 21.615
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 21.626
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 21.651
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 21.668
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 21.672
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 21.734
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 21.732
+        }
+      ]
+    },
+    "DKK": {
+      "rate": 6.666,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "AMCM",
+          "date": "2026-10-23",
+          "rate": 6.6623
+        },
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 6.6768
+        },
+        {
+          "key": "BCB",
+          "date": "2026-10-23",
+          "rate": 6.6733
+        },
+        {
+          "key": "BCC",
+          "date": "2026-10-23",
+          "rate": 6.6731
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 6.6706
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 6.6712
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 6.6591
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 6.6882
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 6.662
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 6.6781
+        },
+        {
+          "key": "BFM",
+          "date": "2026-10-23",
+          "rate": 6.6794
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 6.6536
+        },
+        {
+          "key": "BM",
+          "date": "2026-10-23",
+          "rate": 6.6712
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 6.6788
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 6.6746
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 6.6751
+        },
+        {
+          "key": "BOI",
+          "date": "2026-10-23",
+          "rate": 6.6767
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 6.6751
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 6.6543
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 6.6552
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 6.6672
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 6.6536
+        },
+        {
+          "key": "CBBH",
+          "date": "2026-10-24",
+          "rate": 6.6781
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 6.6646
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 72.16,
+          "excluded": true
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 6.659
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 6.6816
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 6.6485
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 6.6745
+        },
+        {
+          "key": "CBN",
+          "date": "2026-10-23",
+          "rate": 6.5898
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 6.6484
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 6.6536
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 6.6666
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 6.6564
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 6.6831
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 6.6772
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 6.6709
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 6.6781
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 6.6554
+        },
+        {
+          "key": "HNB",
+          "date": "2026-10-23",
+          "rate": 6.6709
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 6.6781
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 6.6781
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 6.6537
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 6.6783
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 6.6218
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 6.6379
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 6.6633
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 6.6658
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 6.6476
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 6.6652
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 6.654
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 6.6624
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 6.6709
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 6.6682
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 6.6785
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 6.6768
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 6.6646
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 6.6496
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 6.6781
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 6.6648
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 6.6749
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 6.678
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 6.6597
+        }
+      ]
+    },
+    "DOP": {
+      "rate": 61.795,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCV",
+          "date": "2026-10-23",
+          "rate": 61.2
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 61.009
+        },
+        {
+          "key": "BOJA",
+          "date": "2026-10-23",
+          "rate": 63.968
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 61.367
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 61.431
+        }
+      ]
+    },
+    "DZD": {
+      "rate": 134.76,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 134.8
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 134.92
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 134.78
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 135.29
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 134.56
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 134.61
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 134.63
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 134.8
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 134.57
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 134.65
+        }
+      ]
+    },
+    "EGP": {
+      "rate": 54.994,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 55.316
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 55.3
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 55.266
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 55.28
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 55.289
+        },
+        {
+          "key": "BOI",
+          "date": "2026-10-23",
+          "rate": 55.08
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 55.303
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 55.31
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 54.256
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 54.379
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 55.307
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 54.384
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 55.31
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 55.3
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 54.379
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 55.226
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 55.233
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 54.31
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 55.298
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 54.35
+        }
+      ]
+    },
     "EUR": {
-      "rate": 0.89107,
-      "date": "2026-10-25",
+      "rate": 0.89108,
+      "date": "2026-10-24",
       "providers": [
         {
           "key": "AMCM",
@@ -744,7 +3608,7 @@
         },
         {
           "key": "BOM",
-          "date": "2026-10-25",
+          "date": "2026-10-24",
           "rate": 0.89298
         },
         {
@@ -875,8 +3739,8 @@
         },
         {
           "key": "DAB",
-          "date": "2026-10-22",
-          "rate": 0.89326
+          "date": "2026-10-24",
+          "rate": 0.89356
         },
         {
           "key": "DNB",
@@ -980,8 +3844,8 @@
         },
         {
           "key": "NBT",
-          "date": "2026-10-23",
-          "rate": 0.89294
+          "date": "2026-10-24",
+          "rate": 0.89333
         },
         {
           "key": "NBU",
@@ -1045,9 +3909,45 @@
         }
       ]
     },
+    "FJD": {
+      "rate": 2.2437,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 2.2518
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 2.2497
+        },
+        {
+          "key": "CBS",
+          "date": "2026-10-22",
+          "rate": 2.2404
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 2.2553
+        },
+        {
+          "key": "NRBT",
+          "date": "2026-10-23",
+          "rate": 2.2154
+        },
+        {
+          "key": "RBF",
+          "date": "2026-10-22",
+          "rate": 2.2497
+        }
+      ]
+    },
     "GBP": {
       "rate": 0.74682,
-      "date": "2026-10-25",
+      "date": "2026-10-24",
       "providers": [
         {
           "key": "AMCM",
@@ -1186,7 +4086,7 @@
         },
         {
           "key": "BOM",
-          "date": "2026-10-25",
+          "date": "2026-10-24",
           "rate": 0.74758
         },
         {
@@ -1316,8 +4216,8 @@
         },
         {
           "key": "DAB",
-          "date": "2026-10-22",
-          "rate": 0.7618
+          "date": "2026-10-24",
+          "rate": 0.76222
         },
         {
           "key": "DNB",
@@ -1421,8 +4321,8 @@
         },
         {
           "key": "NBT",
-          "date": "2026-10-23",
-          "rate": 0.74805
+          "date": "2026-10-24",
+          "rate": 0.74767
         },
         {
           "key": "NBU",
@@ -1486,9 +4386,132 @@
         }
       ]
     },
+    "GEL": {
+      "rate": 2.5941,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 2.5959
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 2.5961
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 2.5974
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 2.596
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 2.5976
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 2.596
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 2.5973
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 2.566
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 2.5987
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 2.5968
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 2.5967
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 2.5973
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 2.5967
+        }
+      ]
+    },
+    "GHS": {
+      "rate": 11.6676,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 11.6084
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 11.7333
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 11.5999
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 11.6161
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 11.7801
+        }
+      ]
+    },
+    "GTQ": {
+      "rate": 7.6434,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 7.6435
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 7.6425
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 7.6442
+        }
+      ]
+    },
     "HKD": {
       "rate": 7.8482,
-      "date": "2026-10-25",
+      "date": "2026-10-24",
       "providers": [
         {
           "key": "AMCM",
@@ -1562,7 +4585,7 @@
         },
         {
           "key": "BOM",
-          "date": "2026-10-25",
+          "date": "2026-10-24",
           "rate": 7.8412
         },
         {
@@ -1742,9 +4765,500 @@
         }
       ]
     },
+    "HNL": {
+      "rate": 26.867,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 26.901
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 26.846
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 26.855
+        }
+      ]
+    },
+    "HUF": {
+      "rate": 326.78,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 327.04
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 326.19
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 327.64
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 327.44
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 327.64
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 325.55
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 327.74
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 322.83
+        },
+        {
+          "key": "CBBH",
+          "date": "2026-10-24",
+          "rate": 327.64
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 325.24
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 326.23
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 326.64
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 325.06
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 326.75
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 327.62
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 327
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 327.64
+        },
+        {
+          "key": "HNB",
+          "date": "2026-10-23",
+          "rate": 327.02
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 327.64
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 326.23
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 327.64
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 326.13
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 326.49
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 323.07
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 326.46
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 326.28
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 326.96
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 326.94
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 327.48
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 327.66
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 327.63
+        }
+      ]
+    },
+    "IDR": {
+      "rate": 18058,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 18108
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 18047
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 18076
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 18052
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 18095
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 17940
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 17993
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 17970
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 18007
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 18118
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 180.41,
+          "excluded": true
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 16609,
+          "excluded": true
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 17986
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 18045
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 17993
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 18042
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 18078
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 18108
+        },
+        {
+          "key": "FBIL",
+          "date": "2026-10-16",
+          "rate": 18038
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 18108
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 18077
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 18024
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 18108
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 17969
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 18048
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 17994
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 18050
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 18321
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 18061
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 18081
+        },
+        {
+          "key": "RBA",
+          "date": "2026-10-23",
+          "rate": 18073
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 18063
+        }
+      ]
+    },
+    "ILS": {
+      "rate": 3.1087,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 3.1079
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 3.1086
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 3.1215
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 3.1044
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 3.12
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 3.0882
+        },
+        {
+          "key": "BOI",
+          "date": "2026-10-23",
+          "rate": 3.112
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 3.0994
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 3.1097
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 3.092
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 3.1067
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 3.1079
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 3.1215
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 3.112
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 3.1215
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 3.1016
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 3.1215
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 3.1013
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 3.1025
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 3.1035
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 3.1019
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 3.1079
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 3.1093
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 3.0975
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 3.1215
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 3.1089
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 3.1214
+        }
+      ]
+    },
     "INR": {
-      "rate": 94.75,
-      "date": "2026-10-25",
+      "rate": 94.76,
+      "date": "2026-10-24",
       "providers": [
         {
           "key": "BAM",
@@ -1823,7 +5337,7 @@
         },
         {
           "key": "BOM",
-          "date": "2026-10-25",
+          "date": "2026-10-24",
           "rate": 94.95
         },
         {
@@ -1904,8 +5418,8 @@
         },
         {
           "key": "DAB",
-          "date": "2026-10-22",
-          "rate": 87.52,
+          "date": "2026-10-24",
+          "rate": 88.4,
           "excluded": true
         },
         {
@@ -2005,8 +5519,8 @@
         },
         {
           "key": "NBT",
-          "date": "2026-10-23",
-          "rate": 94.83
+          "date": "2026-10-24",
+          "rate": 94.95
         },
         {
           "key": "NBU",
@@ -2045,9 +5559,254 @@
         }
       ]
     },
+    "IQD": {
+      "rate": 1516.79,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 1516
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 1517.67
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 1521.02
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 1505
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 1517.24
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 1516.54
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 1516.61
+        }
+      ]
+    },
+    "ISK": {
+      "rate": 121.52,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 121.39
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 121.68
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 121.62
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 121.12
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 121.29
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 121.68
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 121.55
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 121.68
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 121.68
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 121.28
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 121.76
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 121.41
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 121.45
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 121.24
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 121.38
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 121.82
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 121.68
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 121.68
+        }
+      ]
+    },
+    "JMD": {
+      "rate": 158.2,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 158.73
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 157.97
+        },
+        {
+          "key": "BOJA",
+          "date": "2026-10-23",
+          "rate": 153.93
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 158.76
+        },
+        {
+          "key": "CBTT",
+          "date": "2026-10-23",
+          "rate": 161.1
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 158.72
+        }
+      ]
+    },
+    "JOD": {
+      "rate": 0.709,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 0.709,
+          "excluded": true
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 0.70901,
+          "excluded": true
+        },
+        {
+          "key": "BOI",
+          "date": "2026-10-23",
+          "rate": 0.70909,
+          "excluded": true
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 0.709,
+          "excluded": true
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 0.708,
+          "excluded": true
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 0.709,
+          "excluded": true
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 0.70844,
+          "excluded": true
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 0.709,
+          "excluded": true
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 0.709,
+          "excluded": true
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 0.70922,
+          "excluded": true
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 0.709,
+          "excluded": true
+        }
+      ]
+    },
     "JPY": {
-      "rate": 157.14,
-      "date": "2026-10-25",
+      "rate": 157.15,
+      "date": "2026-10-24",
       "providers": [
         {
           "key": "AMCM",
@@ -2197,7 +5956,7 @@
         },
         {
           "key": "BOM",
-          "date": "2026-10-25",
+          "date": "2026-10-24",
           "rate": 156.94
         },
         {
@@ -2409,8 +6168,8 @@
         },
         {
           "key": "NBT",
-          "date": "2026-10-23",
-          "rate": 156.85
+          "date": "2026-10-24",
+          "rate": 156.93
         },
         {
           "key": "NBU",
@@ -2474,9 +6233,127 @@
         }
       ]
     },
+    "KES": {
+      "rate": 129.72,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 129.85
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 129.75
+        },
+        {
+          "key": "BNRRW",
+          "date": "2026-10-23",
+          "rate": 129.85
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 129.95
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 129.86
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 129.89
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 129.85
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 129.87
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 129.85
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 129.85
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 127.98
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 129.98
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 129.75
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 129.8
+        }
+      ]
+    },
+    "KHR": {
+      "rate": 4074,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 4078.78
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 4096.08
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 4052.63
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 40.753,
+          "excluded": true
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 4069.9
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 4079
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 4067.57
+        }
+      ]
+    },
     "KRW": {
       "rate": 1324.51,
-      "date": "2026-10-25",
+      "date": "2026-10-24",
       "providers": [
         {
           "key": "AMCM",
@@ -2535,7 +6412,7 @@
         },
         {
           "key": "BOM",
-          "date": "2026-10-25",
+          "date": "2026-10-24",
           "rate": 1327.87
         },
         {
@@ -2666,8 +6543,8 @@
         },
         {
           "key": "NBT",
-          "date": "2026-10-23",
-          "rate": 1323.95
+          "date": "2026-10-24",
+          "rate": 1324.09
         },
         {
           "key": "NBU",
@@ -2711,9 +6588,3723 @@
         }
       ]
     },
+    "KWD": {
+      "rate": 0.3089,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 0.31065
+        },
+        {
+          "key": "BCCCD",
+          "date": "2026-10-23",
+          "rate": 0.31016
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 0.308
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 0.3086
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 0.3093
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 0.308
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 0.31024
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 0.308
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 0.30805
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 0.31047
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 0.31095
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 0.308
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 0.30979
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 0.308
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 0.308
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 0.3102
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 0.31068
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 0.308
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-22",
+          "rate": 0.308
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 0.30652
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 0.3103
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 0.30795
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 0.30815
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 0.31057
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 0.30808
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 0.3102
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 0.30803
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 0.30805
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 0.308
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 0.3102
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 0.30795
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 0.308
+        }
+      ]
+    },
+    "KZT": {
+      "rate": 449.61,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 450.22
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 454.3
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 449.82
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 453.65
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 452.13
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 448.33
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 448.61
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 448.15
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 447.89
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 447.94
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-23",
+          "rate": 448
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 448.47
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 449.71
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 447.76
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 451.11
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 449.73
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 448.52
+        }
+      ]
+    },
+    "LAK": {
+      "rate": 22384,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 22400
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 22559
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 22000
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 225.08,
+          "excluded": true
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 22576
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 22290
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 22477
+        }
+      ]
+    },
+    "LKR": {
+      "rate": 331.6,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 332.35
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 332.03
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 328
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 331.9
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 332.28
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 331.88
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 332.02
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 331.25
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 331.93
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 332
+        }
+      ]
+    },
+    "MAD": {
+      "rate": 9.8017,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 9.8296
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 9.8046
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 9.816
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 9.8241
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 9.788
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 9.7734
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 9.7825
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 9.795
+        }
+      ]
+    },
+    "MDL": {
+      "rate": 17.9731,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 17.9629
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 18.04
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 17.8759
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 17.9498
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 17.9427
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 17.99
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 17.9906
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 17.8604
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 17.9236
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 18.0106
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 18.0362
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 17.9604
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 18.0092
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 17.9902
+        }
+      ]
+    },
+    "MKD": {
+      "rate": 55.017,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 54.942
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 54.984
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 54.942
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 54.962
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 55.254
+        }
+      ]
+    },
+    "MNT": {
+      "rate": 3597.1,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 3598.54
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 3598.54
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 3581.4
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 3598.44
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 3604.07
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 3597.91
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 3598.73
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 3600.56
+        }
+      ]
+    },
+    "MUR": {
+      "rate": 47.196,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 47.097
+        },
+        {
+          "key": "BFM",
+          "date": "2026-10-23",
+          "rate": 47.161
+        },
+        {
+          "key": "BM",
+          "date": "2026-10-23",
+          "rate": 46.993
+        },
+        {
+          "key": "BOMU",
+          "date": "2026-10-22",
+          "rate": 47.251
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 47.297
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 47.108
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 47.351
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 47.307
+        }
+      ]
+    },
+    "MXN": {
+      "rate": 18.7435,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BANXICO",
+          "date": "2026-10-23",
+          "rate": 18.667
+        },
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 18.709
+        },
+        {
+          "key": "BCC",
+          "date": "2026-10-23",
+          "rate": 18.7098
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 18.6603
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 18.7134
+        },
+        {
+          "key": "BCV",
+          "date": "2026-10-23",
+          "rate": 18.7084
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 18.7819
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 18.7708
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 18.7775
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 18.6897
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 18.7576
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 18.4981
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 18.7553
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 18.7908
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 18.7596
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 18.7819
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 18.5026
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-22",
+          "rate": 18.7005
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 18.7819
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 18.8029
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 18.7807
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 18.8052
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 18.8037
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 18.7611
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 18.8222
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 18.7818
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 18.7807
+        }
+      ]
+    },
+    "MYR": {
+      "rate": 4.0831,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "AMCM",
+          "date": "2026-10-23",
+          "rate": 4.081
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 4.0805
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 4.0855
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 4.0815
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 4.0835
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-22",
+          "rate": 4.0797
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 4.085
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 4.0855
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 4.0832
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 4.085
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 4.0805
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 4.083
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 4.0822
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 4.0845
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 4.082
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 4.086
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 4.0808
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 4.0909
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 4.0851
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 4.0836
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 4.0855
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 4.079
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 4.0848
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 4.0855
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 4.0854
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 4.082
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 4.0855
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 4.0587
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 4.0811
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 4.082
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 4.0832
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 4.0821
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 4.0835
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 4.0879
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 4.0833
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 4.0834
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 4.0855
+        },
+        {
+          "key": "RBA",
+          "date": "2026-10-23",
+          "rate": 4.0848
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 4.0825
+        }
+      ]
+    },
+    "NGN": {
+      "rate": 1340.14,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 1344.4
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 1376.89
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 1334.46
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 1443.2,
+          "excluded": true
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 1333.33
+        },
+        {
+          "key": "CBN",
+          "date": "2026-10-22",
+          "rate": 1343.9
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 1334.72
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 1333.97
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 1326.5
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 1333.08
+        }
+      ]
+    },
+    "NIO": {
+      "rate": 36.624,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 36.836,
+          "excluded": true
+        },
+        {
+          "key": "BCV",
+          "date": "2026-10-23",
+          "rate": 35.685,
+          "excluded": true
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 36.753,
+          "excluded": true
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 36.798,
+          "excluded": true
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 36.824,
+          "excluded": true
+        }
+      ]
+    },
+    "NOK": {
+      "rate": 9.3518,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "AMCM",
+          "date": "2026-10-23",
+          "rate": 9.3252
+        },
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 9.3482
+        },
+        {
+          "key": "BCB",
+          "date": "2026-10-23",
+          "rate": 9.3222
+        },
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 9.3279
+        },
+        {
+          "key": "BCC",
+          "date": "2026-10-23",
+          "rate": 9.3548
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 9.3606
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 9.3326
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 9.3255
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 9.3749
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 9.3309
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 9.3509
+        },
+        {
+          "key": "BFM",
+          "date": "2026-10-23",
+          "rate": 9.3564
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 9.3591
+        },
+        {
+          "key": "BM",
+          "date": "2026-10-23",
+          "rate": 9.3299
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 9.3538
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 9.341
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 9.3349
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 9.3561
+        },
+        {
+          "key": "BOI",
+          "date": "2026-10-23",
+          "rate": 9.3453
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 9.343
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 9.3701
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 9.3798
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 9.3293
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 9.3426
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 9.3975
+        },
+        {
+          "key": "CBBH",
+          "date": "2026-10-24",
+          "rate": 9.3509
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 9.3643
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 0.09404,
+          "excluded": true
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 9.4036
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 9.3648
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 9.3643
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 9.3487
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 9.3639
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 9.3573
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 9.3283
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 9.3584
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 9.3642
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 9.351
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 9.36
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 9.3509
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 9.4474
+        },
+        {
+          "key": "HNB",
+          "date": "2026-10-23",
+          "rate": 9.3601
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-22",
+          "rate": 9.3601
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 9.3509
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 9.3583
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 9.3509
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 9.321
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 9.3623
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 9.3613
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 9.4507
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 9.3654
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 9.3588
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 9.3606
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 9.3601
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 9.3321
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 9.3482
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 9.3723
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 9.3593
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 9.3509
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 9.3227
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 9.3498
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 9.3506
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 9.3602
+        }
+      ]
+    },
+    "NPR": {
+      "rate": 151.65,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 151.91
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 151.67
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 151.9
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 150.91
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 151.84
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 151.69
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 151.53
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 151.72
+        }
+      ]
+    },
+    "NZD": {
+      "rate": 1.7572,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "AMCM",
+          "date": "2026-10-23",
+          "rate": 1.7581
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 1.7603
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 1.7541
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 1.7584
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 1.7596
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 1.7584
+        },
+        {
+          "key": "BFM",
+          "date": "2026-10-23",
+          "rate": 1.7592
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 1.757
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 1.7586
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-22",
+          "rate": 1.7519
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 1.759
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 1.755
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 1.7631
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 1.7582
+        },
+        {
+          "key": "BOMU",
+          "date": "2026-10-22",
+          "rate": 1.7284
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 1.7579
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 1.7569
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 1.7593
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 1.7617
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 1.7596
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 1.7579
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 1.7573
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 1.7572
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 1.7518
+        },
+        {
+          "key": "CBS",
+          "date": "2026-10-22",
+          "rate": 1.7555
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 1.7572
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 1.7575
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 1.7652
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 1.7581
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 1.7603
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 1.7584
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 1.7687
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 1.7578
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 1.7584
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 1.7553
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 1.7584
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 1.7584
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 1.7484
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 1.7605
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 1.7638
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 1.7614
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 1.7586
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 1.7589
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 1.7603
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 1.7617
+        },
+        {
+          "key": "NRBT",
+          "date": "2026-10-23",
+          "rate": 1.7477
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 1.7584
+        },
+        {
+          "key": "RBA",
+          "date": "2026-10-23",
+          "rate": 1.7575
+        },
+        {
+          "key": "RBF",
+          "date": "2026-10-22",
+          "rate": 1.7534
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 1.7562
+        },
+        {
+          "key": "RBV",
+          "date": "2026-10-23",
+          "rate": 1.7604
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 1.7573
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 1.7584
+        }
+      ]
+    },
+    "OMR": {
+      "rate": 0.3845,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 0.38502,
+          "excluded": true
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 0.38575,
+          "excluded": true
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 0.38453,
+          "excluded": true
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 0.38501,
+          "excluded": true
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 0.3845,
+          "excluded": true
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 0.3845,
+          "excluded": true
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 0.3845,
+          "excluded": true
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 0.3845,
+          "excluded": true
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 0.38502,
+          "excluded": true
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 0.385,
+          "excluded": true
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-22",
+          "rate": 0.3845,
+          "excluded": true
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 0.38498,
+          "excluded": true
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 0.38501,
+          "excluded": true
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 0.38511,
+          "excluded": true
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 0.38501,
+          "excluded": true
+        }
+      ]
+    },
+    "PEN": {
+      "rate": 3.4417,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 3.4442
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 3.444
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 3.4428
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 3.4437
+        },
+        {
+          "key": "BCV",
+          "date": "2026-10-23",
+          "rate": 3.4461
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 3.4399
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 3.4425
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 3.4466
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 3.4369
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 3.443
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 3.4288
+        }
+      ]
+    },
+    "PHP": {
+      "rate": 63.485,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 63.642
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 63.527
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 63.452
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 63.609
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 63.468
+        },
+        {
+          "key": "BSP",
+          "date": "2026-10-23",
+          "rate": 63.5
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 63.298
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 63.427
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 63.598
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 63.438
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 63.394
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 63.323
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 63.648
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 63.532
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 63.642
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-22",
+          "rate": 63.226
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 63.642
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 63.431
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 63.469
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 63.642
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 63.201
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 63.539
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 63.511
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 63.641
+        },
+        {
+          "key": "RBA",
+          "date": "2026-10-23",
+          "rate": 63.446
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 63.374
+        }
+      ]
+    },
+    "PKR": {
+      "rate": 277.36,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 277.11
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 276.7
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 276.65
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 276.9
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 276.96
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 276.98
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 276.68
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 277.2
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 277.45
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 276.79
+        },
+        {
+          "key": "DAB",
+          "date": "2026-10-24",
+          "rate": 284.47
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 276.74
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 276.51
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 276.83
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 277.76
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 276.88
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 276.5
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 276.78
+        }
+      ]
+    },
+    "PLN": {
+      "rate": 3.9079,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 3.8996
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 3.9261
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 3.9252
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 3.9262
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 3.9295
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 3.882
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 3.9178
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 3.9258
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 3.8893
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 3.8753
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 3.8886
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 3.9047
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 3.8859
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 3.9074
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 3.9265
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 3.8995
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 3.9261
+        },
+        {
+          "key": "HNB",
+          "date": "2026-10-23",
+          "rate": 3.8996
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 3.9247
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 3.9261
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 3.8888
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 3.9261
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 3.8932
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 3.8955
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 3.8822
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 3.8955
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 3.8886
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 3.894
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 3.8996
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 3.9069
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 3.9261
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 3.9039
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 3.9261
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 3.926
+        }
+      ]
+    },
+    "PYG": {
+      "rate": 5770,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 5804
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 5765
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 5796
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 5781
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 5790
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 5704
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 5752
+        }
+      ]
+    },
+    "QAR": {
+      "rate": 3.64,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 3.6453,
+          "excluded": true
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 3.6521,
+          "excluded": true
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 3.64,
+          "excluded": true
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 3.645,
+          "excluded": true
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 3.6453,
+          "excluded": true
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 3.6449,
+          "excluded": true
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 3.645,
+          "excluded": true
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 3.64,
+          "excluded": true
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 3.64,
+          "excluded": true
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 3.6452,
+          "excluded": true
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 3.64,
+          "excluded": true
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 3.6453,
+          "excluded": true
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 3.645,
+          "excluded": true
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-22",
+          "rate": 3.64,
+          "excluded": true
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 3.6438,
+          "excluded": true
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 3.6453,
+          "excluded": true
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 3.6448,
+          "excluded": true
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 3.6461,
+          "excluded": true
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 3.6449,
+          "excluded": true
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 3.6454,
+          "excluded": true
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 3.645,
+          "excluded": true
+        }
+      ]
+    },
+    "RON": {
+      "rate": 4.7683,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 4.7791
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 4.7781
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 4.777
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 4.7573
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 4.7407
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 4.7487
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 4.764
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 4.7694
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 4.7531
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 4.7793
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 4.7704
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 4.7791
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 4.7791
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 4.759
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 4.7792
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 4.767
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 4.7613
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 4.7661
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 4.7596
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 4.7702
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 4.7754
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 4.7745
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 4.7791
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 4.7617
+        }
+      ]
+    },
+    "RSD": {
+      "rate": 104.72,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 104.71
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 104.82
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 104.99
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 104.29
+        },
+        {
+          "key": "CBBH",
+          "date": "2026-10-24",
+          "rate": 104.96
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 104.44
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 104.9
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 104.46
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 104.58
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 104.56
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 104.73
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 104.75
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 104.53
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 104.87
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 104.8
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 104.95
+        }
+      ]
+    },
+    "SAR": {
+      "rate": 3.75,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 3.7536,
+          "excluded": true
+        },
+        {
+          "key": "BCCCD",
+          "date": "2026-10-23",
+          "rate": 3.75,
+          "excluded": true
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 3.75,
+          "excluded": true
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 3.7585,
+          "excluded": true
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 3.75,
+          "excluded": true
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 3.7512,
+          "excluded": true
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 3.7531,
+          "excluded": true
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 3.7507,
+          "excluded": true
+        },
+        {
+          "key": "BNRRW",
+          "date": "2026-10-23",
+          "rate": 3.754,
+          "excluded": true
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 3.7512,
+          "excluded": true
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 3.7514,
+          "excluded": true
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 3.75,
+          "excluded": true
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 3.7519,
+          "excluded": true
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 3.7518,
+          "excluded": true
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 3.7505,
+          "excluded": true
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 3.75,
+          "excluded": true
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 3.7519,
+          "excluded": true
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 3.75,
+          "excluded": true
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 3.7532,
+          "excluded": true
+        },
+        {
+          "key": "CBN",
+          "date": "2026-10-22",
+          "rate": 3.752,
+          "excluded": true
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 3.751,
+          "excluded": true
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 3.75,
+          "excluded": true
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 3.7539,
+          "excluded": true
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 3.7514,
+          "excluded": true
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 3.7667,
+          "excluded": true
+        },
+        {
+          "key": "DAB",
+          "date": "2026-10-24",
+          "rate": 3.7944,
+          "excluded": true
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-22",
+          "rate": 3.75,
+          "excluded": true
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 3.7518,
+          "excluded": true
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 3.7336,
+          "excluded": true
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 3.7333,
+          "excluded": true
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 3.7516,
+          "excluded": true
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 3.7527,
+          "excluded": true
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 3.7524,
+          "excluded": true
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 3.7534,
+          "excluded": true
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 3.7524,
+          "excluded": true
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 3.7508,
+          "excluded": true
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 3.7511,
+          "excluded": true
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 3.7538,
+          "excluded": true
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 3.7514,
+          "excluded": true
+        }
+      ]
+    },
+    "SEK": {
+      "rate": 9.9174,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "AMCM",
+          "date": "2026-10-23",
+          "rate": 9.9088
+        },
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 9.9353
+        },
+        {
+          "key": "BCB",
+          "date": "2026-10-23",
+          "rate": 9.9245
+        },
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 9.9045
+        },
+        {
+          "key": "BCC",
+          "date": "2026-10-23",
+          "rate": 9.9186
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 9.9172
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 9.927
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 9.9021
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 9.9455
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 9.908
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 9.9446
+        },
+        {
+          "key": "BFM",
+          "date": "2026-10-23",
+          "rate": 9.9451
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 9.8965
+        },
+        {
+          "key": "BM",
+          "date": "2026-10-23",
+          "rate": 9.9239
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 9.9441
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 9.9355
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 9.9382
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 9.9248
+        },
+        {
+          "key": "BOI",
+          "date": "2026-10-23",
+          "rate": 9.933
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 9.9314
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 9.8888
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 9.8788
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 9.9177
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 9.9408
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 9.8952
+        },
+        {
+          "key": "CBBH",
+          "date": "2026-10-24",
+          "rate": 9.9446
+        },
+        {
+          "key": "CBE",
+          "date": "2026-10-22",
+          "rate": 9.9144
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 0.09903,
+          "excluded": true
+        },
+        {
+          "key": "CBI",
+          "date": "2026-10-19",
+          "rate": 9.8922
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 9.938
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 9.8892
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 9.9267
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 9.8887
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 9.8785
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 9.9155
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 9.8888
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 9.942
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 9.9456
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 9.9166
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 9.9446
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 9.9189
+        },
+        {
+          "key": "HNB",
+          "date": "2026-10-23",
+          "rate": 9.917
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-22",
+          "rate": 9.917
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 9.9446
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 9.8978
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 9.9446
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 9.8527
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 9.8684
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 9.9145
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 9.9146
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 9.8939
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 9.915
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 9.8972
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 9.9058
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 9.9169
+        },
+        {
+          "key": "NBS",
+          "date": "2026-10-23",
+          "rate": 9.9203
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 9.9425
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 9.929
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 9.9099
+        },
+        {
+          "key": "NRBT",
+          "date": "2026-10-23",
+          "rate": 9.8881
+        },
+        {
+          "key": "PMA",
+          "date": "2026-10-22",
+          "rate": 9.889
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 9.9446
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 9.9121
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 9.9279
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 9.9444
+        },
+        {
+          "key": "TCMB",
+          "date": "2026-10-23",
+          "rate": 9.9038
+        }
+      ]
+    },
+    "SGD": {
+      "rate": 1.2774,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "AMCM",
+          "date": "2026-10-23",
+          "rate": 1.2768
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 1.2775
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 1.2781
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 1.2772
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 1.2785
+        },
+        {
+          "key": "BFM",
+          "date": "2026-10-23",
+          "rate": 1.2786
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 1.2768
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 1.2784
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 1.2763
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 1.278
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 1.2784
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 1.2779
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 1.2782
+        },
+        {
+          "key": "BOMU",
+          "date": "2026-10-22",
+          "rate": 1.2565
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 1.2774
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 1.2775
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 1.2781
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 1.2786
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-20",
+          "rate": 1.2776
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 1.2784
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 1.2771
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 1.2781
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 1.277
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 1.2772
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 1.2775
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 1.2774
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 1.2806
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 1.2784
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 1.2776
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 1.2785
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 1.2798
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-23",
+          "rate": 1.2775
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 1.2785
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 1.2775
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 1.277
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 1.2785
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 1.2703
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 1.2772
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 1.2772
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 1.2798
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 1.277
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 1.277
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 1.2776
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 1.2785
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 1.278
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 1.2771
+        },
+        {
+          "key": "NRBT",
+          "date": "2026-10-23",
+          "rate": 1.2846
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 1.2785
+        },
+        {
+          "key": "RBA",
+          "date": "2026-10-23",
+          "rate": 1.2779
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 1.2778
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 1.2784
+        }
+      ]
+    },
+    "THB": {
+      "rate": 33.709,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 33.741
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 33.745
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 33.675
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 33.732
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 33.709
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 33.736
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 33.759
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 33.6
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 33.761
+        },
+        {
+          "key": "BOT",
+          "date": "2026-10-22",
+          "rate": 33.619
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 33.563
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 33.646
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 33.751
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 33.646
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 33.65
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 33.735
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 33.595
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 33.907
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 33.75
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 33.743
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 33.745
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 33.43
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-22",
+          "rate": 33.65
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 33.745
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 33.715
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 33.701
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 33.746
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 33.572
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 33.73
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 33.409
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 33.697
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 33.744
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 33.755
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 33.756
+        },
+        {
+          "key": "NRB",
+          "date": "2026-10-23",
+          "rate": 33.716
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 33.745
+        },
+        {
+          "key": "RBA",
+          "date": "2026-10-23",
+          "rate": 33.728
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 33.71
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 33.745
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 33.745
+        }
+      ]
+    },
+    "TND": {
+      "rate": 2.9968,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 3.0002
+        },
+        {
+          "key": "BCT",
+          "date": "2026-10-22",
+          "rate": 2.9911
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 3.0008
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 2.992
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 2.9928
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 2.9986
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 3.0007
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 2.9979
+        }
+      ]
+    },
     "TRY": {
-      "rate": 49.66,
-      "date": "2026-10-25",
+      "rate": 49.662,
+      "date": "2026-10-24",
       "providers": [
         {
           "key": "BAM",
@@ -2762,7 +10353,7 @@
         },
         {
           "key": "BOM",
-          "date": "2026-10-25",
+          "date": "2026-10-24",
           "rate": 49.738
         },
         {
@@ -2887,8 +10478,8 @@
         },
         {
           "key": "NBT",
-          "date": "2026-10-23",
-          "rate": 49.641
+          "date": "2026-10-24",
+          "rate": 49.739
         },
         {
           "key": "NBU",
@@ -2924,7 +10515,7 @@
     },
     "TWD": {
       "rate": 32.534,
-      "date": "2026-10-25",
+      "date": "2026-10-24",
       "providers": [
         {
           "key": "AMCM",
@@ -2963,7 +10554,7 @@
         },
         {
           "key": "BOM",
-          "date": "2026-10-25",
+          "date": "2026-10-24",
           "rate": 32.598
         },
         {
@@ -3025,6 +10616,750 @@
           "key": "SARB",
           "date": "2026-10-23",
           "rate": 32.571
+        }
+      ]
+    },
+    "TZS": {
+      "rate": 2639.99,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCCCD",
+          "date": "2026-10-23",
+          "rate": 2633.72
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 2643.41
+        },
+        {
+          "key": "BM",
+          "date": "2026-10-23",
+          "rate": 2630.04
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 2626.51
+        },
+        {
+          "key": "BNRRW",
+          "date": "2026-10-23",
+          "rate": 2645.5
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 2636.23
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 2644.73
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 2644.56
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 2655.17
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 2644.43
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 2650.72
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 2624.9
+        }
+      ]
+    },
+    "UAH": {
+      "rate": 45.125,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 45.186
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 45.385
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 45.237
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 45.191
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 45.26
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 45.093
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 45.056
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 45.051
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 45.025
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 45.059
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 45.061
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 45.064
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 44.887
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 45.049
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 45.059
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 45.03
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 45.289
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 45.051
+        }
+      ]
+    },
+    "UGX": {
+      "rate": 4237.16,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCCCD",
+          "date": "2026-10-23",
+          "rate": 4194.44
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 4318.05
+        },
+        {
+          "key": "BNRRW",
+          "date": "2026-10-23",
+          "rate": 4228.33
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 4196.49
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 4302.97
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 4304.55
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 4162.16
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 4190.3
+        }
+      ]
+    },
+    "UYU": {
+      "rate": 40.107,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCBO",
+          "date": "2026-10-23",
+          "rate": 40.1
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 40.1
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 40.1
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 40.083
+        },
+        {
+          "key": "BCV",
+          "date": "2026-10-23",
+          "rate": 40.091
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 40.097
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 40.094
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 40.145
+        },
+        {
+          "key": "IMF",
+          "date": "2026-10-21",
+          "rate": 40.091
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 40.171
+        }
+      ]
+    },
+    "UZS": {
+      "rate": 11922,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 11924
+        },
+        {
+          "key": "CBA",
+          "date": "2026-10-23",
+          "rate": 11857
+        },
+        {
+          "key": "CBAR",
+          "date": "2026-10-20",
+          "rate": 12057
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 11846
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 11966
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 11966
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 11892
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 11882
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 12012
+        },
+        {
+          "key": "NBM",
+          "date": "2026-10-23",
+          "rate": 11888
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 12002
+        },
+        {
+          "key": "NBT",
+          "date": "2026-10-24",
+          "rate": 11901
+        }
+      ]
+    },
+    "VND": {
+      "rate": 25809,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 25844
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 25844
+        },
+        {
+          "key": "BI",
+          "date": "2026-10-23",
+          "rate": 25967
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 25827
+        },
+        {
+          "key": "BNM",
+          "date": "2026-10-23",
+          "rate": 25821
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 25704
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 25667
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 258.3,
+          "excluded": true
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 25632
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 25738
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 25843
+        },
+        {
+          "key": "MAS",
+          "date": "2026-10-23",
+          "rate": 25839
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 25831
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 25735
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 25848
+        },
+        {
+          "key": "NBKR",
+          "date": "2026-10-17",
+          "rate": 25873
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 25872
+        },
+        {
+          "key": "NBRB",
+          "date": "2026-10-23",
+          "rate": 25852
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 25844
+        },
+        {
+          "key": "RBA",
+          "date": "2026-10-23",
+          "rate": 25836
+        }
+      ]
+    },
+    "ZAR": {
+      "rate": 16.4931,
+      "date": "2026-10-24",
+      "providers": [
+        {
+          "key": "BAM",
+          "date": "2026-10-23",
+          "rate": 16.5761
+        },
+        {
+          "key": "BCCCD",
+          "date": "2026-10-23",
+          "rate": 16.4655
+        },
+        {
+          "key": "BCEAO",
+          "date": "2026-10-22",
+          "rate": 16.5155
+        },
+        {
+          "key": "BCP",
+          "date": "2026-10-23",
+          "rate": 16.6068
+        },
+        {
+          "key": "BCRA",
+          "date": "2026-10-22",
+          "rate": 16.5038
+        },
+        {
+          "key": "BCU",
+          "date": "2026-10-22",
+          "rate": 16.5054
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 16.5976
+        },
+        {
+          "key": "BFM",
+          "date": "2026-10-23",
+          "rate": 16.6042
+        },
+        {
+          "key": "BM",
+          "date": "2026-10-23",
+          "rate": 16.557
+        },
+        {
+          "key": "BNA",
+          "date": "2026-10-23",
+          "rate": 16.2924
+        },
+        {
+          "key": "BNR",
+          "date": "2026-10-23",
+          "rate": 16.5695
+        },
+        {
+          "key": "BNRRW",
+          "date": "2026-10-23",
+          "rate": 16.5186
+        },
+        {
+          "key": "BOB",
+          "date": "2026-10-23",
+          "rate": 16.4967
+        },
+        {
+          "key": "BOC",
+          "date": "2026-10-23",
+          "rate": 16.5951
+        },
+        {
+          "key": "BOE",
+          "date": "2026-10-22",
+          "rate": 16.5139
+        },
+        {
+          "key": "BOI",
+          "date": "2026-10-23",
+          "rate": 16.562
+        },
+        {
+          "key": "BOM",
+          "date": "2026-10-24",
+          "rate": 16.5648
+        },
+        {
+          "key": "BOMU",
+          "date": "2026-10-22",
+          "rate": 15.9195
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 16.3869
+        },
+        {
+          "key": "BOZ",
+          "date": "2026-10-23",
+          "rate": 16.5896
+        },
+        {
+          "key": "BRB",
+          "date": "2026-10-23",
+          "rate": 16.5107
+        },
+        {
+          "key": "CBG",
+          "date": "2026-10-21",
+          "rate": 16.4
+        },
+        {
+          "key": "CBK",
+          "date": "2026-10-23",
+          "rate": 16.5254
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 16.3996
+        },
+        {
+          "key": "CBM",
+          "date": "2026-10-23",
+          "rate": 16.5615
+        },
+        {
+          "key": "CBN",
+          "date": "2026-10-22",
+          "rate": 16.5213
+        },
+        {
+          "key": "CBO",
+          "date": "2026-10-22",
+          "rate": 16.3967
+        },
+        {
+          "key": "CBR",
+          "date": "2026-10-23",
+          "rate": 16.4688
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 16.5154
+        },
+        {
+          "key": "CBU",
+          "date": "2026-10-22",
+          "rate": 16.4181
+        },
+        {
+          "key": "CFETS",
+          "date": "2026-10-23",
+          "rate": 16.529
+        },
+        {
+          "key": "CNB",
+          "date": "2026-10-23",
+          "rate": 16.5962
+        },
+        {
+          "key": "DNB",
+          "date": "2026-10-22",
+          "rate": 16.5162
+        },
+        {
+          "key": "ECB",
+          "date": "2026-10-23",
+          "rate": 16.5976
+        },
+        {
+          "key": "FRED",
+          "date": "2026-10-16",
+          "rate": 16.4749
+        },
+        {
+          "key": "LB",
+          "date": "2026-10-23",
+          "rate": 16.5976
+        },
+        {
+          "key": "MNB",
+          "date": "2026-10-22",
+          "rate": 16.4846
+        },
+        {
+          "key": "NB",
+          "date": "2026-10-23",
+          "rate": 16.5973
+        },
+        {
+          "key": "NBC",
+          "date": "2026-10-23",
+          "rate": 16.3815
+        },
+        {
+          "key": "NBE",
+          "date": "2026-10-23",
+          "rate": 16.4351
+        },
+        {
+          "key": "NBG",
+          "date": "2026-10-23",
+          "rate": 16.4824
+        },
+        {
+          "key": "NBK",
+          "date": "2026-10-23",
+          "rate": 16.4744
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-22",
+          "rate": 16.4841
+        },
+        {
+          "key": "NBRM",
+          "date": "2026-10-23",
+          "rate": 16.5157
+        },
+        {
+          "key": "NBU",
+          "date": "2026-10-23",
+          "rate": 16.5392
+        },
+        {
+          "key": "RB",
+          "date": "2026-10-23",
+          "rate": 16.5976
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 16.0209
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 16.563
+        },
+        {
+          "key": "SBI",
+          "date": "2026-10-23",
+          "rate": 16.598
+        }
+      ]
+    },
+    "ZMW": {
+      "rate": 20.237,
+      "date": "2026-10-23",
+      "providers": [
+        {
+          "key": "BCCCD",
+          "date": "2026-10-23",
+          "rate": 20.149
+        },
+        {
+          "key": "BDI",
+          "date": "2026-10-23",
+          "rate": 20.319
+        },
+        {
+          "key": "BM",
+          "date": "2026-10-23",
+          "rate": 20.097
+        },
+        {
+          "key": "BOTA",
+          "date": "2026-10-23",
+          "rate": 20.1
+        },
+        {
+          "key": "BOZ",
+          "date": "2026-10-23",
+          "rate": 20.118
+        },
+        {
+          "key": "CBKKW",
+          "date": "2026-10-22",
+          "rate": 20.272
+        },
+        {
+          "key": "CBSL",
+          "date": "2026-10-23",
+          "rate": 21.03
+        },
+        {
+          "key": "NBP",
+          "date": "2026-10-21",
+          "rate": 20.086
+        },
+        {
+          "key": "RBM",
+          "date": "2026-10-23",
+          "rate": 20.1
+        },
+        {
+          "key": "SARB",
+          "date": "2026-10-23",
+          "rate": 20.103
         }
       ]
     }

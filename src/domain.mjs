@@ -1,4 +1,5 @@
-import { MARKETS, PRICE_MAX_AGE_DAYS, FX_MAX_AGE_DAYS } from './config.mjs';
+import { MARKETS, GLOBAL_MARKET, PRICE_MAX_AGE_DAYS, FX_MAX_AGE_DAYS } from './config.mjs';
+import { isCurrency } from './currency.mjs';
 
 export function ageDays(iso, now = new Date()) {
   const time = Date.parse(iso);
@@ -12,7 +13,7 @@ export function fxRate(fx, from, to, now = new Date()) {
   const b = to === 'USD' ? { rate: 1, date: null } : fx.rates[to];
   if (!a || !b || !(a.rate > 0) || !(b.rate > 0)) return null;
   const dates = [a.date, b.date].filter(Boolean);
-  return { rate: b.rate / a.rate, dates, stale: dates.some(date => ageDays(date, now) > FX_MAX_AGE_DAYS) };
+  return { rate: b.rate / a.rate, dates, stale: dates.some(date => ageDays(date, now) > FX_MAX_AGE_DAYS || ageDays(date,now)<0) };
 }
 
 export function convert(amount, from, to, fx, now) {
@@ -30,21 +31,29 @@ export function isVerifiedMonthly(record) {
 
 // A reference quote is explicitly a public listing, never an inferred monthly price.
 export function selectRows(dataset, fx, options = {}, now = new Date()) {
-  const { plan = 'plus', target = 'CNY', mode = 'reference', search = '', tax = 'included' } = options;
+  const { plan = 'plus', target = 'CNY', mode = 'reference', channel = 'ios', area = '', search = '', tax = 'included' } = options;
   const grouped = new Map();
   for (const record of dataset.observations) {
-    if (record.planId !== plan || record.channel !== 'ios') continue;
+    if (record.planId !== plan || record.channel !== channel) continue;
     if (mode === 'verified' && (!isVerifiedMonthly(record) || record.taxStatus !== tax)) continue;
-    const market = MARKETS.find(m => m.code === record.region);
+    const market = record.region === 'global' ? GLOBAL_MARKET : MARKETS.find(m => m.code === record.region);
     if (!market) continue;
-    if (search && !`${market.name} ${market.nameEn} ${market.code} ${market.currency}`.toLowerCase().includes(search.toLowerCase())) continue;
+    if (area && market.area !== area) continue;
+    if (search && !`${market.name} ${market.nameEn} ${market.code} ${record.currency}`.toLowerCase().includes(search.toLowerCase())) continue;
     const converted = convert(record.amount, record.currency, target, fx, now);
-    const priceStale = ageDays(record.observedAt, now) > PRICE_MAX_AGE_DAYS;
+    const priceStale = ageDays(record.observedAt, now) > PRICE_MAX_AGE_DAYS || ageDays(record.observedAt,now)<0;
     // Old observations remain inspectable, but never enter the current ranking.
-    const rankable = Boolean(converted && !converted.stale && !priceStale);
-    const row = { ...record, market, converted, priceStale, rankable };
+    const rankable = Boolean(record.region !== 'global' && converted && !converted.stale && !priceStale);
+    const row = { ...record, kind: 'quote', market, converted, priceStale, rankable };
     const previous = grouped.get(record.region);
-    if (!previous || record.amount < previous.amount) grouped.set(record.region, row);
+    if (!previous || (row.rankable && !previous.rankable) || (row.rankable === previous.rankable && row.converted && (!previous.converted || row.converted.amount < previous.converted.amount)) || (!row.converted && !previous.converted && record.currency === previous.currency && record.amount < previous.amount)) grouped.set(record.region, row);
+  }
+  if (mode === 'reference' && channel === 'android') for (const record of dataset.ranges ?? []) {
+    if (grouped.has(record.region)) continue;
+    const market = MARKETS.find(m => m.code === record.region);
+    if (!market || (area && market.area !== area)) continue;
+    if (search && !`${market.name} ${market.nameEn} ${market.code} ${record.currency}`.toLowerCase().includes(search.toLowerCase())) continue;
+    grouped.set(record.region, { ...record, kind: 'range', market, converted: null, convertedMin: convert(record.min, record.currency, target, fx, now), convertedMax: convert(record.max, record.currency, target, fx, now), priceStale: ageDays(record.observedAt, now) > PRICE_MAX_AGE_DAYS, rankable: false });
   }
   return [...grouped.values()].sort((a, b) => {
     if (a.rankable !== b.rankable) return a.rankable ? -1 : 1;
@@ -58,36 +67,57 @@ export function toCsv(rows, target) {
     if (/^[=+@\-\t\r]/.test(value)) value = `'${value}`;
     return `"${value.replaceAll('"', '""')}"`;
   };
-  const columns = ['region', 'plan', 'channel', 'source_name', 'amount', 'currency', 'period', 'verification', 'tax', `converted_${target}`, 'price_observed_at', 'fx_dates', 'source_url'];
-  const values = rows.map(r => [r.region, r.planId, r.channel, r.sourceName, r.amount, r.currency, r.period, r.verification, r.taxStatus, r.converted?.amount.toFixed(4) ?? '', r.observedAt, r.converted?.dates.join(';') ?? '', r.sourceUrl]);
+  const columns = ['region', 'kind', 'scope', 'plan', 'channel', 'source_name', 'amount', 'currency', 'period', 'verification', 'tax', `converted_${target}`, 'range_min', 'range_max', `converted_range_min_${target}`, `converted_range_max_${target}`, 'price_observed_at', 'fx_dates', 'source_url'];
+  const values = rows.map(r => [r.region, r.kind ?? 'quote', r.scope ?? 'regional', r.planId ?? '', r.channel, r.sourceName ?? '', r.amount ?? '', r.currency, r.period, r.verification ?? 'observed_range', r.taxStatus, r.converted?.amount.toFixed(4) ?? '', r.min ?? '', r.max ?? '', r.convertedMin?.amount.toFixed(4) ?? '', r.convertedMax?.amount.toFixed(4) ?? '', r.observedAt, (r.converted?.dates ?? r.convertedMin?.dates ?? []).join(';'), r.sourceUrl]);
   return '\uFEFF' + [columns, ...values].map(row => row.map(escape).join(',')).join('\r\n');
 }
 
 export function validateDataset(data) {
-  if (data.schemaVersion !== 1 || !Array.isArray(data.observations) || !Array.isArray(data.markets)) throw new Error('Unsupported dataset schema');
+  if (![1, 2].includes(data.schemaVersion) || !Array.isArray(data.observations) || !Array.isArray(data.markets)) throw new Error('Unsupported dataset schema');
   const ids = new Set();
   for (const r of data.observations) {
-    const market = MARKETS.find(m => m.code === r.region);
-    if (!market || market.currency !== r.currency) throw new Error(`Currency/region mismatch: ${r.id}`);
+    const market = r.region === 'global' ? GLOBAL_MARKET : MARKETS.find(m => m.code === r.region);
+    if (!market || !isCurrency(r.currency)) throw new Error(`Currency/region mismatch: ${r.id}`);
+    if (r.channel === 'ios' && r.currency !== market.currency && r.currencyEvidence?.value !== r.currency) throw new Error(`Currency/region mismatch without storefront evidence: ${r.id}`);
     if (!r.id || ids.has(r.id)) throw new Error(`Duplicate/missing observation ID: ${r.id}`);
     ids.add(r.id);
     if (!Number.isFinite(r.amount) || r.amount <= 0) throw new Error(`Invalid amount: ${r.id}`);
     if (!['plus', 'pro-100', 'pro-200', 'pro-500'].includes(r.planId)) throw new Error(`Invalid plan: ${r.id}`);
-    const url = new URL(r.sourceUrl);
-    if (url.hostname !== 'apps.apple.com' || !url.pathname.startsWith(`/${r.region}/`) || !url.pathname.endsWith('/id6448311069')) throw new Error(`Unexpected source: ${r.id}`);
+    validateSource(r);
     if (!Number.isFinite(Date.parse(r.observedAt)) || !/^[a-f0-9]{64}$/.test(r.sourceSha256)) throw new Error(`Missing provenance: ${r.id}`);
     if (!['unknown', 'month', 'year'].includes(r.period)) throw new Error(`Invalid period: ${r.id}`);
     if (!['observed', 'verified'].includes(r.verification)) throw new Error(`Invalid verification: ${r.id}`);
-    if (!['included', 'excluded', 'unknown'].includes(r.taxStatus) || r.channel !== 'ios') throw new Error(`Invalid tax/channel: ${r.id}`);
-    if (r.verification === 'verified' && (!r.periodEvidence?.url || !r.periodEvidence?.note || !r.taxEvidence?.url || !r.taxEvidence?.note || !r.reviewedAt)) throw new Error(`Verified prices require period/tax evidence and review date: ${r.id}`);
+    if (!['included', 'excluded', 'unknown'].includes(r.taxStatus) || !['ios', 'web', 'android'].includes(r.channel)) throw new Error(`Invalid tax/channel: ${r.id}`);
+    if (r.verification === 'verified' && (!r.periodEvidence?.url || !r.periodEvidence?.note || !r.taxEvidence?.url || !r.taxEvidence?.note || !Number.isFinite(Date.parse(r.reviewedAt)))) throw new Error(`Verified prices require period/tax evidence and review date: ${r.id}`);
+    for(const evidence of [r.periodEvidence,r.taxEvidence])if(evidence?.url&&new URL(evidence.url).protocol!=='https:')throw new Error(`Evidence must use HTTPS: ${r.id}`);
+  }
+  for (const r of data.ranges ?? []) {
+    if (!MARKETS.some(m => m.code === r.region) || r.channel !== 'android' || r.scope !== 'all_in_app_products' || !isCurrency(r.currency) || !(r.min > 0) || !Number.isFinite(r.max) || r.max < r.min || r.period !== 'unknown') throw new Error(`Invalid aggregate range: ${r.id}`);
+    if (ids.has(r.id)) throw new Error(`Duplicate range ID: ${r.id}`);
+    ids.add(r.id); validateSource(r);
+    if (!Number.isFinite(Date.parse(r.observedAt)) || !/^[a-f0-9]{64}$/.test(r.sourceSha256)) throw new Error(`Missing range provenance: ${r.id}`);
   }
   return true;
+}
+
+function validateSource(r) {
+  const url = new URL(r.sourceUrl);
+  if (url.protocol !== 'https:') throw new Error(`Evidence must use HTTPS: ${r.id}`);
+  if (r.origin === 'reviewed_submission') {
+    if (!r.reviewedAt || !r.periodEvidence?.note || !r.periodEvidence?.url) throw new Error(`Reviewed submissions require period evidence: ${r.id}`);
+  } else if (r.channel === 'ios') {
+    if (url.hostname !== 'apps.apple.com' || !url.pathname.startsWith(`/${r.region}/`) || !url.pathname.endsWith('/id6448311069')) throw new Error(`Unexpected source: ${r.id}`);
+  } else if (r.channel === 'android') {
+    if (url.hostname !== 'play.google.com' || url.searchParams.get('id') !== 'com.openai.chatgpt' || url.searchParams.get('gl')?.toLowerCase() !== r.region) throw new Error(`Unexpected Android source: ${r.id}`);
+  } else if (r.channel === 'web') {
+    if (r.region !== 'global' || r.scope !== 'global_reference' || url.href !== 'https://learn.chatgpt.com/docs/pricing') throw new Error(`Regional web prices require reviewed submissions: ${r.id}`);
+  }
 }
 
 export function validateFx(fx) {
   if (fx.base !== 'USD' || !fx.rates?.CNY || !Number.isFinite(Date.parse(fx.fetchedAt))) throw new Error('Invalid FX snapshot');
   for (const [currency, row] of Object.entries(fx.rates)) {
-    if (!/^[A-Z]{3}$/.test(currency) || !(row.rate > 0) || !Number.isFinite(row.rate) || !/^\d{4}-\d{2}-\d{2}$/.test(row.date)) throw new Error(`Invalid FX quote: ${currency}`);
+    if (!/^[A-Z]{3}$/.test(currency) || !(row.rate > 0) || !Number.isFinite(row.rate) || !/^\d{4}-\d{2}-\d{2}$/.test(row.date) || row.date>new Date().toISOString().slice(0,10)) throw new Error(`Invalid FX quote: ${currency}`);
   }
   return true;
 }
