@@ -1,6 +1,6 @@
 {
   "name": "gpt-price-radar",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "Traceable regional ChatGPT subscription prices and currency comparisons",
   "type": "module",
@@ -10,6 +10,7 @@
     "build": "node scripts/build.mjs",
     "test": "node --test",
     "validate": "node scripts/validate.mjs",
+    "audit": "node scripts/audit.mjs --write",
     "import:quotes": "node scripts/import-quotes.mjs",
     "update": "node scripts/update.mjs"
   },

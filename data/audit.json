@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "dataGeneratedAt": "2026-10-24T06:00:42.809Z",
+  "status": "passed",
+  "officialPriceRecords": 575,
+  "officialMonthlyConfigs": 36,
+  "explicitMonthlyWithTaxBasis": 36,
+  "iosListingsWithoutPeriod": 535,
+  "androidAggregateRanges": 56,
+  "androidPlanMonthlyQuotes": 0,
+  "sourceDocumentsChecked": 9,
+  "checks": [
+    "official source URL and country",
+    "numeric amount matches stored source text",
+    "monthly configuration matches retained official JSON",
+    "source JSON canonical SHA-256",
+    "source category and tax basis separation",
+    "no self-declared verified imports",
+    "aggregate ranges excluded from plan rankings"
+  ],
+  "limits": [
+    "Official configuration is not proof of account checkout eligibility.",
+    "App Store public listing does not establish period or tax.",
+    "Google Play aggregate range does not establish Plus/Pro monthly price.",
+    "A retained hash is an integrity check, not a publisher signature."
+  ]
+}

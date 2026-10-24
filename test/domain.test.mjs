@@ -1,11 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { selectRows, convert, isVerifiedMonthly, validateDataset, validateFx, toCsv } from '../src/domain.mjs';
+import { selectRows,selectComparisonRows,toComparisonCsv, convert, isVerifiedMonthly, validateDataset, validateFx, toCsv } from '../src/domain.mjs';
 import { parseAmount, parseApple } from '../src/apple.mjs';
 import { MARKETS } from '../src/config.mjs';
 import { parseAndroid } from '../src/android.mjs';
-import { parseOfficialWebBaseline } from '../src/web.mjs';
+import { parseOfficialWebBaseline,parseCheckoutConfig,makeCheckoutRecords,canonicalJson } from '../src/web.mjs';
+import {createHash}from'node:crypto';
 const ld = currency => `<script type="application/ld+json">${JSON.stringify({'@type':'SoftwareApplication',name:'ChatGPT',offers:{price:0,priceCurrency:currency}})}</script>`;
 
 const now = new Date('2026-10-24T04:00:00Z');
@@ -124,16 +125,53 @@ test('area filters isolate configured regions',()=>{
   const prices=data(record('us',20),record('jp',3000));
   assert.deepEqual(selectRows(prices,fx,{area:'asia'},now).map(r=>r.region),['jp']);
 });
-test('reviewed regional web quotes can rank without borrowing global or iOS prices',()=>{
+test('self-reported review fields cannot establish a verified regional price',()=>{
   const quote=record('jp',3000,{...verified,id:'reviewed-web-jp-plus',channel:'web',origin:'reviewed_submission',sourceUrl:'https://example.com/checkout-evidence'});
-  const prices=data(quote);assert.ok(validateDataset(prices));
-  const rows=selectRows(prices,fx,{channel:'web',mode:'verified'},now);assert.equal(rows.length,1);assert.equal(rows[0].rankable,true);
-  assert.equal(selectRows(prices,fx,{channel:'ios'},now).length,0);
-  assert.throws(()=>validateDataset(data({...quote,origin:'guessed'})),/require reviewed/);
+  assert.throws(()=>validateDataset(data(quote)),/Self-declared/);
+  const candidate={...quote,verification:'observed'};assert.ok(validateDataset(data(candidate)));
+  assert.equal(selectRows(data(candidate),fx,{channel:'web'},now).length,0);
+  assert.equal(selectRows(data(candidate),fx,{channel:'web',includeCandidates:true},now)[0].rankable,false);
+  assert.throws(()=>validateDataset(data({...quote,origin:'guessed'})),/official configuration/);
 });
 test('future-dated FX cannot rank prices',()=>{
   const nextDayFx={...fx,rates:{...fx.rates,JPY:{rate:150,date:'2026-10-25'}}};
   assert.equal(selectRows(data(record('jp',3000)),nextDayFx,{},now)[0].rankable,false);
+});
+const sourceBody={country_code:'IN',currency_config:{symbol_code:'INR',tax_type:'gst',tax_percent:18,plus:{month:{amount:1999,tax:'inclusive',psp_override:{amount:1694.07,tax:'exclusive'}},year:{amount:1665.83,tax:'inclusive'}},prolite:{month:{amount:10699,tax:'inclusive'}},pro:{month:{amount:19900,tax:'inclusive'}},promax:{month:{amount:52900,tax:'inclusive'}}}};
+function officialFixture(){
+  const sourceUrl='https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN';
+  const sha256=createHash('sha256').update(canonicalJson(sourceBody)).digest('hex');
+  const doc={kind:'official_checkout_config',body:sourceBody,sourceUrl,observedAt:now.toISOString(),sha256,hashKind:'canonical_json'};
+  return{schemaVersion:3,observations:makeCheckoutRecords(sourceBody,'in','fixture',doc),ranges:[],markets:[],documents:{fixture:doc}};
+}
+test('official month parser does not substitute annual equivalent, minor units or PSP override',()=>{
+  const rows=parseCheckoutConfig(sourceBody,'in');assert.deepEqual(rows.map(r=>r.amount),[1999,10699,19900,52900]);
+  assert.equal(rows[0].taxStatus,'included');assert.equal(rows[0].currency,'INR');assert.equal(rows[0].period,'month');
+  assert.throws(()=>parseCheckoutConfig(sourceBody,'jp'),/country mismatch/);
+});
+test('tax basis is taken per plan and rollout conditions are retained',()=>{
+  const body={country_code:'TR',pricing_rollout_gate:'example_gate',currency_config:{symbol_code:'USD',plus:{month:{amount:20,tax:'exclusive'}},prolite:{month:{amount:120,tax:'inclusive'}}}};
+  const rows=parseCheckoutConfig(body,'tr');assert.deepEqual(rows.map(r=>r.taxStatus),['excluded','included']);assert.ok(rows.every(r=>r.pricingRolloutGate==='example_gate'&&r.checkoutEligibility==='not_verified'));
+});
+test('official configuration quotes are cross-checked against the retained source document',()=>{
+  const fixture=officialFixture();assert.ok(validateDataset(fixture));assert.ok(isVerifiedMonthly(fixture.observations[0]));
+  const tampered=structuredClone(fixture);tampered.observations[0].amount=1;tampered.observations[0].displayPrice='₹1';
+  assert.throws(()=>validateDataset(tampered),/disagrees with official source/);
+  const missing=structuredClone(fixture);missing.documents={};assert.throws(()=>validateDataset(missing),/Missing official/);
+});
+test('source price text and numeric amount cannot silently disagree',()=>{
+  const row=record('us',19.99,{displayPrice:'$19.99'});assert.ok(validateDataset(data(row)));
+  assert.throws(()=>validateDataset(data({...row,amount:.01})),/differs from source price text/);
+});
+test('Android stale FX does not remain displayed as a normal range conversion',()=>{
+  const fixture={schemaVersion:2,observations:[],markets:[],ranges:[{region:'us',channel:'android',currency:'USD',min:8,max:500,scope:'all_in_app_products',period:'unknown',observedAt:'2026-10-24T03:00:00Z'}]};
+  const later=new Date('2026-10-30T06:00:00Z');const row=selectRows(fixture,fx,{channel:'android'},later)[0];
+  assert.equal(row.fxStale,true);assert.equal(row.convertedMin,null);assert.equal(row.convertedMax,null);
+});
+test('comparison view keeps all three channels without cloning a GLOBAL price into countries',()=>{
+  const fixture=officialFixture();fixture.observations.push(record('us',19.99));
+  const rows=selectComparisonRows(fixture,fx,{plan:'plus',search:'India'},now);assert.equal(rows.length,1);assert.equal(rows[0].web.amount,1999);assert.equal(rows[0].ios,null);assert.equal(rows[0].android,null);
+  assert.ok(toComparisonCsv(rows,'CNY').includes('web_period'));assert.ok(toComparisonCsv(rows,'CNY').includes('INR'));
 });
 test('validation rejects currency mismatches and unsupported verified claims', () => {
   assert.throws(() => validateDataset(data(record('us', 20, { currency: 'EUR' }))), /mismatch/);

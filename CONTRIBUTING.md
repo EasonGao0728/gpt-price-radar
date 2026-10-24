@@ -1,70 +1,49 @@
-# 贡献价格与代码
+# 贡献报价与代码
 
-欢迎补充有证据的报价。单纯的截图金额、博客转述或按价格大小猜测周期，不能进入已核验月费榜。
+来源可靠与报价完整是两回事。官方商品列表可能不提供周期，官方定价配置可能对账号有生效条件；提交时必须保留这些边界。
 
-## 提交报价
+## 自动官方数据
 
-使用仓库的 Price observation Issue 模板，或提交 PR。请附上：
+- iOS：固定 ChatGPT App ID 的各地区 App Store 页面。保留原始商品名、原价文字、币种证据、采集时间与来源指纹。金额必须能从原价文字重新解析得到，不推断月付/年付。
+- 网页：`https://chatgpt.com/backend-anon/checkout_pricing_config/configs/{COUNTRY}` 的官方 JSON。只取对应套餐 `month` 分支，逐套餐读取税费，保留 `pricing_rollout_gate`。原始 JSON 保存在 `prices.json.documents` 中，并通过标准化 JSON 的 SHA-256 复核。
+- Android：Google Play 主应用的全部内购范围。范围两端不对应具体套餐，不进入 Plus/Pro 月费排名。
 
-- 地区与商店渠道、完整套餐档位。
-- 当地金额和币种，订阅周期，是否标准续费价。
-- 明确的月度周期证据：公开可访问来源链接，或隐去个人信息的订阅确认页面截图。
-- 明确的税费证据：含税 / 未含税及其适用地区口径。
-- 核验时刻和必要的账户 / 付款条件。
+网页接口没有公开的稳定 API 合约。自动采集环境可能返回 403；此时记录访问失败并保留原观测时间。不得为了让数据看起来更新而修改时间、复制别的渠道价格或采用未确认的接口。
 
-请移除姓名、邮箱、账单地址、卡号、订单号、会话信息等个人资料。不要提交 Cookie、访问令牌或支付信息。
+## 提交安卓账号实测报价
 
-## 将公开列价提升为已核验月费
+在对应地区 Google Play 账号登录的真实安卓设备或模拟器中，打开官方 ChatGPT 的套餐/订阅确认页面，记录：
 
-仅维护者审核后修改对应记录：
+1. Google Play 商店账号地区、设备类型、ChatGPT 应用版本。
+2. 完整套餐档位、当地币种与金额、续订周期。
+3. 税费是否已包含；是否是标准续费价、首次优惠或旧用户价格。
+4. 观测时间与可复核的来源截图/页面文字。
 
-```json
-{
-  "period": "month",
-  "verification": "verified",
-  "taxStatus": "included",
-  "offerType": "standard",
-  "periodEvidence": {
-    "url": "https://可访问的周期证据页面",
-    "note": "明确显示本报价按月自动续订"
-  },
-  "taxEvidence": {
-    "url": "https://可访问的税费证据页面",
-    "note": "明确说明此地区和报价包含税费"
-  },
-  "reviewedAt": "审核时刻的 ISO 8601 值"
-}
+读取确认页的价格即可，不需要完成付款。请先去除账号邮箱、姓名、卡号、订单号及账单地址等个人信息；不要提交 Cookie、访问令牌或密码。
+
+不同地区账号实测是可行来源，但不能仅凭语言、IP或一张孤立金额截图认定地区和续订周期。当前项目没有可供实测的设备或地区账号，因此安卓单品月费保持待核验。
+
+## 候选报价导入
+
+通过 Issue/PR 提交资料，经维护者整理后可执行：
+
+```bash
+npm run import:quotes -- candidate-quotes.json
 ```
 
-证据必须对应当前金额、币种、档位、地区和渠道。不要将其他地区、网页或不同周期的说明当成当前 iOS 报价的证据。保留原始 `sourceUrl`、`sourceSha256` 和 `observedAt`。如价格发生变化，采集器会移除此前的核验状态，等待再次审核。
+输入为 `{ "quotes": [记录] }`。每条需包含 `id`、`origin: "reviewed_submission"`、`region`、`channel`、`planId`、`sourceName`、`amount`、`currency`、`displayPrice`、HTTPS `sourceUrl`、`sourceSha256`、`observedAt`、`reviewedAt` 与周期说明 `periodEvidence`。
 
-首次优惠、试用、礼品卡折扣、年付折算和旧用户保留价均不属于标准月度价格。若记录它们，需要扩展数据模型和独立比较规则。
+**候选导入只能使用 `verification: "observed"`。** 手工填写 `verified`、任意 HTTPS 链接或一段摘要，不能建立已验证身份。候选报价不进入官方默认列表与排名。完整验证流程建立前，真实账号实测结果也会保留其来源类型和审核状态。
 
-## 代码与验证
+`verification: "official_config"` 仅由官方配置解析器产生，必须与保留的官方国家 JSON、套餐路径、金额、币种、周期、税费和摘要全部一致。不能手工挪用此标记。
 
-## 网页和安卓单品报价导入字段
-
-将审核后的记录放在 `{ "quotes": [记录] }` 中，通过 `npm run import:quotes -- 文件路径` 导入。记录必须包含：
-
-- `id`：唯一 ID，例如 `reviewed-web-in-plus-20261024`；`origin` 必须为 `reviewed_submission`。
-- `region`：已配置的小写地区代码；`channel` 为 `web`、`android` 或 `ios`。
-- `planId`、`sourceName`、`amount`、`currency`、`displayPrice`。
-- `sourceUrl`（HTTPS 原始证据）、`sourceSha256`（原证据 SHA-256）、`observedAt`（真实观测 ISO 时间）。
-- `reviewedAt` 与 `periodEvidence`（HTTPS 链接及明确的周期说明）。
-- `period`、`verification`、`taxStatus`、`offerType`：不确定的字段仍为 `unknown` / `observed`。
-
-只有税费、周期、标准续费价都已核验的记录，才能设为 `verification: "verified"` 并补充 `taxEvidence`。来源页面的金额必须对应具体地区与渠道。不要用 Google Play 全内购范围代替套餐报价，不要把 GLOBAL 美元价格分发到各地区。
-
-自动采集保留 `data/quotes.json` 的审核报价，不会刷新其原观测时间。超过价格有效期后仍会退出当前排名，需要重新核验。
-
-## 代码检查
-
-Node 22+，无依赖安装步骤：
+## 检查
 
 ```bash
 npm test
 npm run validate
+npm run audit
 npm run build
 ```
 
-新增地区时配置明确的 ISO 币种及价格格式，确认采集到的是目标地区的原始页面；为数字格式和失败情况增加必要测试。改变数据源结构时，应先保持未知字段，再补充证据，禁止静默推断。
+新增地区时不要按本地法币猜测商店币种。变更解析器时须覆盖数字缩写、分组符号、不同套餐税费、月度与年度折算的隔离，以及源文档与数值不一致的情况。

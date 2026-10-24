@@ -25,6 +25,8 @@ jobs:
         continue-on-error: true
         run: npm run update -- --allow-partial
       - run: npm run validate
+      - name: Audit source and amount evidence
+        run: npm run audit
       - name: Write collection summary
         run: node scripts/report.mjs >> "$GITHUB_STEP_SUMMARY"
       - name: Commit valid observations, including partial failures

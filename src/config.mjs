@@ -875,6 +875,7 @@ export const MARKETS = [
 ];
 export const GLOBAL_MARKET = { code: 'global', name: '官方美元基线', nameEn: 'Official USD baseline', currency: 'USD', area: 'global' };
 export const CHANNELS = [
+  { id: 'all', name: '三渠道并列对比' },
   { id: 'ios', name: 'iOS · App Store' },
   { id: 'web', name: '网页版 · ChatGPT' },
   { id: 'android', name: 'Android · Google Play' }

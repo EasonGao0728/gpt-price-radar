@@ -2,7 +2,7 @@
 
 [在线查看](https://easongao0728.github.io/gpt-price-radar/) · [每日更新运行记录](https://github.com/EasonGao0728/gpt-price-radar/actions/workflows/update-data.yml) · [提交报价证据](https://github.com/EasonGao0728/gpt-price-radar/issues/new/choose)
 
-可追溯的 ChatGPT 地区价格看板。支持 Plus / Pro 分档、人民币与美元换算、低价参考 Top 5、渠道与大洲筛选、地区搜索、分页、来源详情和 CSV 导出。MIT 许可，无第三方运行依赖，无需 OpenAI API Key。
+可追溯的 ChatGPT 地区价格看板。支持网页 / iOS / 安卓三渠道并列表、Plus / Pro 分档、人民币与美元换算、低价参考 Top 5、渠道与大洲筛选、地区搜索、分页、来源详情和 CSV 导出。MIT 许可，无第三方运行依赖，无需 OpenAI API Key。
 
 ## 数据覆盖与边界
 
@@ -11,20 +11,34 @@
 | 渠道 | 当前自动采集内容 | 能否作为地区套餐月费 |
 |---|---|---|
 | iOS / App Store | 商品名称、格式化列价、同页商店币种及来源 | 公开列表未提供周期和税费，先作列价参考 |
-| 网页版 | 官方 GLOBAL 美元月费基线，Plus 与 Pro 各档位 | GLOBAL 不代表某个地区的实际结账价，不参与地区排名 |
+| 网页版 | 官方地区月度定价配置：初始9地区、36条具体配置价，另保留GLOBAL基线 | 月度与税费字段明确；账号结账资格和生效条件仍需核验 |
 | Android / Google Play | 主应用全部内购商品的价格范围 | 范围涵盖不同商品，不能当作 Plus / Pro 单品月费 |
-| 人工审核报价 | 有来源、周期、税费等证据的具体套餐价格 | 满足证据和标准价格规则后可进入已核验月费榜 |
+| 候选账号实测报价 | 真实地区Google Play账号在安卓订阅确认页观察的具体报价 | 当前没有实测设备/账号；提交后先为候选，不凭自填审核字段进入官方榜 |
 
 **不能自动取得的数据保持未知。不会把 iOS 价格复制给网页或安卓，不会把美元基线复制给所有国家，也不会将 Google Play 范围下限当成 Plus 价格。**
 
-App Store 同一个套餐名可能有不同金额，全部保留。“公开列价参考”每地区取该名称最低公开列价，只能比较列价的换算大小，不能由此判断月付/年付或最终支付成本。只有周期、税费和标准续费价都有证据的月度报价进入“已核验月费”；含税与未含税分别比较。
+App Store 同一个套餐名可能有不同金额，全部保留。“公开列价参考”每地区取该名称最低公开列价，只能比较列价的换算大小，不能由此判断月付/年付或最终支付成本。网页月费必须绑定保留的官方配置JSON，含税与未含税分别比较。三渠道并列表会明确保留各自的证据边界。
 
 币种来自原始商品 ISO 或同页 `SoftwareApplication.offers.priceCurrency` 并检查价格符号。后者属于页面商店币种线索，用于内购时会标注推定范围。某些国家的商店使用 USD 等外币，不能按国家法币猜测。缺失/冲突币种不换算。
+
+## 来源校验与可复核证据
+
+网页配置的精确来源是 OpenAI 自有域名：
+
+- [印度官方配置](https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN)
+- [加拿大官方配置](https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA)
+
+套餐映射为 `plus / prolite / pro / promax`，对应 Plus / Pro 100 / Pro 200 / Pro 500，仅读取 `month.amount` 与本套餐的 `month.tax`。不将年度折算字段或 `psp_override` 税前金额替换为月度展示价。保留币种、税率和定价生效条件，所有配置价均注明账号结账资格未核验。
+
+`data/prices.json.documents` 保存取得的官方 JSON；`data/audit.json` 公开来源白名单、金额重算、源JSON字段绑定和摘要校验结果。通过网页检索工具读取的响应使用 `canonical_json` 指纹，明确不伪称网络原始字节哈希。哈希证明保存内容的一致性，不是发布方的数字签名。
+
+校验拒绝数值与原价文字不一致、地区不匹配、月度配置与源JSON不一致、自填 `verified`、以及把安卓范围当作单品的记录。安卓范围汇率过期时停止换算并提示状态。
 
 ## 每日自动更新
 
 - `Update price data`：每日 **北京时间 08:17 / UTC 00:17**，也可在 Actions 中手动运行。GitHub 调度可能排队。
-- 自动采集 iOS 列价、Android 范围、网页基线与每日汇率，校验后提交 `data/`。
+- 自动采集 iOS 列价、Android 范围、网页基线与每日汇率，并尝试刷新官方地区配置；来源审计后提交 `data/`。
+- 已验证：GitHub运行环境访问地区配置接口会返回403。因此目前网页9地区配置来自已实际读取的官方JSON快照，不能宣称它们已由GitHub每日刷新。访问受阻时保留原时间与配置，记录错误/访问阻断状态，过期后退出排名。
 - 个别来源失败时保留旧数据和原观测时间，详细错误进入 Actions summary；整条渠道失败或汇率获取失败会报告任务失败。
 - 数据更新任务结束后，`Publish dashboard` 构建并更新 GitHub Pages；源码推送到 main 也会触发发布。
 - 私有 Sites 预览会读取同一 GitHub 数据源；访问数据源失败时退回构建快照，并显示来源状态。GitHub Pages 使用每日构建的同源快照。
@@ -67,7 +81,7 @@ npm test
 npm run build
 ```
 
-输入为 `{ "quotes": [ ... ] }`，每条需要 `origin: "reviewed_submission"`、地区、渠道、套餐、真实金额/币种、原始来源 HTTPS URL、来源 SHA-256、观测与审核时间、周期证据。完整字段及核验要求见 [CONTRIBUTING.md](CONTRIBUTING.md)。导入不能凭空生成价格，也不自动升级成“已核验月费”。
+输入为 `{ "quotes": [ ... ] }`，仅接受 `verification: "observed"` 的候选报价，不进入默认官方列表或排名。每条需要 `origin: "reviewed_submission"`、地区、渠道、套餐、真实金额/币种、原始来源 HTTPS URL、来源 SHA-256、观测与审核时间、周期证据。完整字段及核验要求见 [CONTRIBUTING.md](CONTRIBUTING.md)。导入不能凭空生成价格，也不会凭手工填报升级成已验证价格。
 
 ## 数据与实现
 
@@ -79,7 +93,9 @@ src/config.mjs         地区目录、渠道、套餐、过期阈值与数据源
 src/currency.mjs       页面币种、数字格式与符号校验
 src/apple.mjs          App Store 名称/价格对提取
 src/android.mjs        Google Play 主应用内购范围提取
-src/web.mjs            官方网页 GLOBAL 基线提取
+src/web.mjs            官方地区月度配置、源JSON证据及GLOBAL基线提取
+public/compare.mjs     三渠道并列表
+scripts/audit.mjs      来源、金额、配置原文和摘要一致性审计
 src/domain.mjs         换算、筛选、排名、CSV与数据校验
 scripts/collect.mjs    限速采集、失败保留和数据合并
 scripts/import-quotes.mjs  审核报价导入
@@ -88,7 +104,7 @@ test/                 核心数据逻辑测试
 .github/workflows/    CI、每日采集、Pages发布
 ```
 
-`schemaVersion: 2` 将 `observations`（具体商品/基线）与 `ranges`（全部内购范围）分开。每项保留 `sourceUrl`、`sourceSha256`、`observedAt`。`markets[]` 区分成功、缺少公开数据、等待结账核验、页面不可用和采集失败。来源指纹用于追踪本次响应，不意味着公开页面能证明订阅周期。
+`schemaVersion: 3` 额外保留官方网页源文档 `documents`，并将 `observations`（具体商品/基线）与 `ranges`（全部内购范围）分开。每项保留 `sourceUrl`、`sourceSha256`、`observedAt`。`markets[]` 区分成功、缺少公开数据、等待结账核验、页面不可用和采集失败。来源指纹用于追踪本次响应，不意味着公开页面能证明订阅周期。
 
 ## Fork 与部署
 

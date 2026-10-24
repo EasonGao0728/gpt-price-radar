@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 2,
-  "generatedAt": "2026-10-24T05:05:21.316Z",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-24T06:00:42.809Z",
   "observations": [
     {
       "id": "ios-us-plus-0",
@@ -14542,6 +14542,1446 @@
       "sourceSha256": "d43d682e0bc6c31e8ee6171fe73efe77bba3aa3285985534eacb466367bca9b2",
       "origin": "apple_public",
       "notes": "公开列价；周期和税费未知。币种来自单品ISO或同页商店币种，详情保留证据范围。"
+    },
+    {
+      "id": "web-in-plus",
+      "region": "in",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "plus",
+      "amount": 1999,
+      "currency": "INR",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.plus.month",
+      "taxType": "gst",
+      "taxPercent": 18,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Plus",
+      "displayPrice": "₹1,999.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "d96438286424645fe4f0dca111b3c0d84155c12b94ec1c672ecfd04d3d49f20b",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-in-d96438286424645f",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+        "note": "官方配置 currency_config.plus.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+        "note": "currency_config.plus.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "INR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-in-pro-100",
+      "region": "in",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-100",
+      "amount": 10699,
+      "currency": "INR",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.prolite.month",
+      "taxType": "gst",
+      "taxPercent": 18,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 100",
+      "displayPrice": "₹10,699.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "d96438286424645fe4f0dca111b3c0d84155c12b94ec1c672ecfd04d3d49f20b",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-in-d96438286424645f",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+        "note": "官方配置 currency_config.prolite.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+        "note": "currency_config.prolite.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "INR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-in-pro-200",
+      "region": "in",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-200",
+      "amount": 19900,
+      "currency": "INR",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.pro.month",
+      "taxType": "gst",
+      "taxPercent": 18,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 200",
+      "displayPrice": "₹19,900.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "d96438286424645fe4f0dca111b3c0d84155c12b94ec1c672ecfd04d3d49f20b",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-in-d96438286424645f",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+        "note": "官方配置 currency_config.pro.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+        "note": "currency_config.pro.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "INR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-in-pro-500",
+      "region": "in",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-500",
+      "amount": 52900,
+      "currency": "INR",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.promax.month",
+      "taxType": "gst",
+      "taxPercent": 18,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 500",
+      "displayPrice": "₹52,900.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "d96438286424645fe4f0dca111b3c0d84155c12b94ec1c672ecfd04d3d49f20b",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-in-d96438286424645f",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+        "note": "官方配置 currency_config.promax.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+        "note": "currency_config.promax.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "INR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-us-plus",
+      "region": "us",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "plus",
+      "amount": 20,
+      "currency": "USD",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.plus.month",
+      "taxType": "other",
+      "taxPercent": null,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Plus",
+      "displayPrice": "$20.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "7c7580caba97428ca1719c569b7b938f62efd7bd58b4d9d5db6311c5c805cb62",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-us-7c7580caba97428c",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+        "note": "官方配置 currency_config.plus.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+        "note": "currency_config.plus.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "USD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-us-pro-100",
+      "region": "us",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-100",
+      "amount": 100,
+      "currency": "USD",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.prolite.month",
+      "taxType": "other",
+      "taxPercent": null,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 100",
+      "displayPrice": "$100.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "7c7580caba97428ca1719c569b7b938f62efd7bd58b4d9d5db6311c5c805cb62",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-us-7c7580caba97428c",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+        "note": "官方配置 currency_config.prolite.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+        "note": "currency_config.prolite.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "USD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-us-pro-200",
+      "region": "us",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-200",
+      "amount": 200,
+      "currency": "USD",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.pro.month",
+      "taxType": "other",
+      "taxPercent": null,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 200",
+      "displayPrice": "$200.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "7c7580caba97428ca1719c569b7b938f62efd7bd58b4d9d5db6311c5c805cb62",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-us-7c7580caba97428c",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+        "note": "官方配置 currency_config.pro.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+        "note": "currency_config.pro.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "USD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-us-pro-500",
+      "region": "us",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-500",
+      "amount": 500,
+      "currency": "USD",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.promax.month",
+      "taxType": "other",
+      "taxPercent": null,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 500",
+      "displayPrice": "$500.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "7c7580caba97428ca1719c569b7b938f62efd7bd58b4d9d5db6311c5c805cb62",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-us-7c7580caba97428c",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+        "note": "官方配置 currency_config.promax.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+        "note": "currency_config.promax.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "USD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-jp-plus",
+      "region": "jp",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "plus",
+      "amount": 3000,
+      "currency": "JPY",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.plus.month",
+      "taxType": "jct",
+      "taxPercent": 10,
+      "pricingRolloutGate": "is_pricing_enabled_for_jpy",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Plus",
+      "displayPrice": "¥3,000",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "6711afb4cec5f50753b1b3408b12eee620c8d264094f7020edbb32dec72a5028",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-jp-6711afb4cec5f507",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+        "note": "官方配置 currency_config.plus.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+        "note": "currency_config.plus.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "JPY",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-jp-pro-100",
+      "region": "jp",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-100",
+      "amount": 16800,
+      "currency": "JPY",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.prolite.month",
+      "taxType": "jct",
+      "taxPercent": 10,
+      "pricingRolloutGate": "is_pricing_enabled_for_jpy",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 100",
+      "displayPrice": "¥16,800",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "6711afb4cec5f50753b1b3408b12eee620c8d264094f7020edbb32dec72a5028",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-jp-6711afb4cec5f507",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+        "note": "官方配置 currency_config.prolite.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+        "note": "currency_config.prolite.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "JPY",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-jp-pro-200",
+      "region": "jp",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-200",
+      "amount": 30000,
+      "currency": "JPY",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.pro.month",
+      "taxType": "jct",
+      "taxPercent": 10,
+      "pricingRolloutGate": "is_pricing_enabled_for_jpy",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 200",
+      "displayPrice": "¥30,000",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "6711afb4cec5f50753b1b3408b12eee620c8d264094f7020edbb32dec72a5028",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-jp-6711afb4cec5f507",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+        "note": "官方配置 currency_config.pro.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+        "note": "currency_config.pro.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "JPY",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-jp-pro-500",
+      "region": "jp",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-500",
+      "amount": 84000,
+      "currency": "JPY",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.promax.month",
+      "taxType": "jct",
+      "taxPercent": 10,
+      "pricingRolloutGate": "is_pricing_enabled_for_jpy",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 500",
+      "displayPrice": "¥84,000",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "6711afb4cec5f50753b1b3408b12eee620c8d264094f7020edbb32dec72a5028",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-jp-6711afb4cec5f507",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+        "note": "官方配置 currency_config.promax.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+        "note": "currency_config.promax.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "JPY",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-gb-plus",
+      "region": "gb",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "plus",
+      "amount": 20,
+      "currency": "GBP",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.plus.month",
+      "taxType": "vat",
+      "taxPercent": 20,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Plus",
+      "displayPrice": "£20.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "fe230e6756d13c764fe87d791fae1280d29f065dab6bd2cb0dc2ee1fb47917d5",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-gb-fe230e6756d13c76",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+        "note": "官方配置 currency_config.plus.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+        "note": "currency_config.plus.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "GBP",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-gb-pro-100",
+      "region": "gb",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-100",
+      "amount": 89,
+      "currency": "GBP",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.prolite.month",
+      "taxType": "vat",
+      "taxPercent": 20,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 100",
+      "displayPrice": "£89.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "fe230e6756d13c764fe87d791fae1280d29f065dab6bd2cb0dc2ee1fb47917d5",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-gb-fe230e6756d13c76",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+        "note": "官方配置 currency_config.prolite.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+        "note": "currency_config.prolite.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "GBP",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-gb-pro-200",
+      "region": "gb",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-200",
+      "amount": 200,
+      "currency": "GBP",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.pro.month",
+      "taxType": "vat",
+      "taxPercent": 20,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 200",
+      "displayPrice": "£200.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "fe230e6756d13c764fe87d791fae1280d29f065dab6bd2cb0dc2ee1fb47917d5",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-gb-fe230e6756d13c76",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+        "note": "官方配置 currency_config.pro.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+        "note": "currency_config.pro.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "GBP",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-gb-pro-500",
+      "region": "gb",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-500",
+      "amount": 445,
+      "currency": "GBP",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.promax.month",
+      "taxType": "vat",
+      "taxPercent": 20,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 500",
+      "displayPrice": "£445.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "fe230e6756d13c764fe87d791fae1280d29f065dab6bd2cb0dc2ee1fb47917d5",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-gb-fe230e6756d13c76",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+        "note": "官方配置 currency_config.promax.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+        "note": "currency_config.promax.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "GBP",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-ca-plus",
+      "region": "ca",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "plus",
+      "amount": 25,
+      "currency": "CAD",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.plus.month",
+      "taxType": "other",
+      "taxPercent": null,
+      "pricingRolloutGate": "is_pricing_enabled_for_cad",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Plus",
+      "displayPrice": "CA$25.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "5c4c73ba84f5370f5ca00bb4aef64ebdcceff921931011a50c5b939c2a200a77",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-ca-5c4c73ba84f5370f",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+        "note": "官方配置 currency_config.plus.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+        "note": "currency_config.plus.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "CAD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-ca-pro-100",
+      "region": "ca",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-100",
+      "amount": 136,
+      "currency": "CAD",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.prolite.month",
+      "taxType": "other",
+      "taxPercent": null,
+      "pricingRolloutGate": "is_pricing_enabled_for_cad",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 100",
+      "displayPrice": "CA$136.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "5c4c73ba84f5370f5ca00bb4aef64ebdcceff921931011a50c5b939c2a200a77",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-ca-5c4c73ba84f5370f",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+        "note": "官方配置 currency_config.prolite.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+        "note": "currency_config.prolite.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "CAD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-ca-pro-200",
+      "region": "ca",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-200",
+      "amount": 250,
+      "currency": "CAD",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.pro.month",
+      "taxType": "other",
+      "taxPercent": null,
+      "pricingRolloutGate": "is_pricing_enabled_for_cad",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 200",
+      "displayPrice": "CA$250.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "5c4c73ba84f5370f5ca00bb4aef64ebdcceff921931011a50c5b939c2a200a77",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-ca-5c4c73ba84f5370f",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+        "note": "官方配置 currency_config.pro.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+        "note": "currency_config.pro.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "CAD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-ca-pro-500",
+      "region": "ca",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-500",
+      "amount": 680,
+      "currency": "CAD",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.promax.month",
+      "taxType": "other",
+      "taxPercent": null,
+      "pricingRolloutGate": "is_pricing_enabled_for_cad",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 500",
+      "displayPrice": "CA$680.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "5c4c73ba84f5370f5ca00bb4aef64ebdcceff921931011a50c5b939c2a200a77",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-ca-5c4c73ba84f5370f",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+        "note": "官方配置 currency_config.promax.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+        "note": "currency_config.promax.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "CAD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-br-plus",
+      "region": "br",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "plus",
+      "amount": 99.9,
+      "currency": "BRL",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.plus.month",
+      "taxType": "vat",
+      "taxPercent": 0,
+      "pricingRolloutGate": "is_pricing_enabled_for_brl",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Plus",
+      "displayPrice": "R$99.90",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "14aba1bb677f1c39efa554289ca423c581e49028a9a140c2f2abd1e540815201",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-br-14aba1bb677f1c39",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+        "note": "官方配置 currency_config.plus.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+        "note": "currency_config.plus.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "BRL",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-br-pro-100",
+      "region": "br",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-100",
+      "amount": 525,
+      "currency": "BRL",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.prolite.month",
+      "taxType": "vat",
+      "taxPercent": 0,
+      "pricingRolloutGate": "is_pricing_enabled_for_brl",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 100",
+      "displayPrice": "R$525.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "14aba1bb677f1c39efa554289ca423c581e49028a9a140c2f2abd1e540815201",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-br-14aba1bb677f1c39",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+        "note": "官方配置 currency_config.prolite.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+        "note": "currency_config.prolite.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "BRL",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-br-pro-200",
+      "region": "br",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-200",
+      "amount": 999.9,
+      "currency": "BRL",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.pro.month",
+      "taxType": "vat",
+      "taxPercent": 0,
+      "pricingRolloutGate": "is_pricing_enabled_for_brl",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 200",
+      "displayPrice": "R$999.90",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "14aba1bb677f1c39efa554289ca423c581e49028a9a140c2f2abd1e540815201",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-br-14aba1bb677f1c39",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+        "note": "官方配置 currency_config.pro.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+        "note": "currency_config.pro.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "BRL",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-br-pro-500",
+      "region": "br",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-500",
+      "amount": 2600,
+      "currency": "BRL",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.promax.month",
+      "taxType": "vat",
+      "taxPercent": 0,
+      "pricingRolloutGate": "is_pricing_enabled_for_brl",
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 500",
+      "displayPrice": "R$2,600.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "14aba1bb677f1c39efa554289ca423c581e49028a9a140c2f2abd1e540815201",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-br-14aba1bb677f1c39",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+        "note": "官方配置 currency_config.promax.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+        "note": "currency_config.promax.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "BRL",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-tr-plus",
+      "region": "tr",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "plus",
+      "amount": 20,
+      "currency": "USD",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.plus.month",
+      "taxType": "vat",
+      "taxPercent": 20,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Plus",
+      "displayPrice": "$20.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "56085e2c52b4cd4d60f82f95b347cc4c594f5c4ebaa4a57628730071785f316e",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-tr-56085e2c52b4cd4d",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+        "note": "官方配置 currency_config.plus.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+        "note": "currency_config.plus.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "USD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-tr-pro-100",
+      "region": "tr",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-100",
+      "amount": 120,
+      "currency": "USD",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.prolite.month",
+      "taxType": "vat",
+      "taxPercent": 20,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 100",
+      "displayPrice": "$120.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "56085e2c52b4cd4d60f82f95b347cc4c594f5c4ebaa4a57628730071785f316e",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-tr-56085e2c52b4cd4d",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+        "note": "官方配置 currency_config.prolite.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+        "note": "currency_config.prolite.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "USD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-tr-pro-200",
+      "region": "tr",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-200",
+      "amount": 200,
+      "currency": "USD",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.pro.month",
+      "taxType": "vat",
+      "taxPercent": 20,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 200",
+      "displayPrice": "$200.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "56085e2c52b4cd4d60f82f95b347cc4c594f5c4ebaa4a57628730071785f316e",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-tr-56085e2c52b4cd4d",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+        "note": "官方配置 currency_config.pro.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+        "note": "currency_config.pro.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "USD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-tr-pro-500",
+      "region": "tr",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-500",
+      "amount": 600,
+      "currency": "USD",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.promax.month",
+      "taxType": "vat",
+      "taxPercent": 20,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 500",
+      "displayPrice": "$600.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "56085e2c52b4cd4d60f82f95b347cc4c594f5c4ebaa4a57628730071785f316e",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-tr-56085e2c52b4cd4d",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+        "note": "官方配置 currency_config.promax.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+        "note": "currency_config.promax.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "USD",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-pk-plus",
+      "region": "pk",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "plus",
+      "amount": 5700,
+      "currency": "PKR",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.plus.month",
+      "taxType": "vat",
+      "taxPercent": 0,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Plus",
+      "displayPrice": "PKR 5,700",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "359e06497f396567abcecd34a6c21a6544c54070b0fa346452ca0085d38da0a2",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-pk-359e06497f396567",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+        "note": "官方配置 currency_config.plus.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+        "note": "currency_config.plus.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "PKR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-pk-pro-100",
+      "region": "pk",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-100",
+      "amount": 27999,
+      "currency": "PKR",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.prolite.month",
+      "taxType": "vat",
+      "taxPercent": 0,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 100",
+      "displayPrice": "PKR 27,999",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "359e06497f396567abcecd34a6c21a6544c54070b0fa346452ca0085d38da0a2",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-pk-359e06497f396567",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+        "note": "官方配置 currency_config.prolite.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+        "note": "currency_config.prolite.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "PKR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-pk-pro-200",
+      "region": "pk",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-200",
+      "amount": 49900,
+      "currency": "PKR",
+      "period": "month",
+      "taxStatus": "excluded",
+      "offerType": "standard",
+      "sourcePath": "currency_config.pro.month",
+      "taxType": "vat",
+      "taxPercent": 0,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 200",
+      "displayPrice": "PKR 49,900",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "359e06497f396567abcecd34a6c21a6544c54070b0fa346452ca0085d38da0a2",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-pk-359e06497f396567",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+        "note": "官方配置 currency_config.pro.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+        "note": "currency_config.pro.month.tax=exclusive"
+      },
+      "currencyEvidence": {
+        "value": "PKR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-pk-pro-500",
+      "region": "pk",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-500",
+      "amount": 139999,
+      "currency": "PKR",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.promax.month",
+      "taxType": "vat",
+      "taxPercent": 0,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 500",
+      "displayPrice": "PKR 139,999",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "359e06497f396567abcecd34a6c21a6544c54070b0fa346452ca0085d38da0a2",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-pk-359e06497f396567",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+        "note": "官方配置 currency_config.promax.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+        "note": "currency_config.promax.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "PKR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-de-plus",
+      "region": "de",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "plus",
+      "amount": 23,
+      "currency": "EUR",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.plus.month",
+      "taxType": "vat",
+      "taxPercent": 19,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Plus",
+      "displayPrice": "€23.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "bcb0f3a0e0edf695f755e5b65d8cc1222457d16a213c244c32287dbba0aed15b",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-de-bcb0f3a0e0edf695",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+        "note": "官方配置 currency_config.plus.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+        "note": "currency_config.plus.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "EUR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-de-pro-100",
+      "region": "de",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-100",
+      "amount": 103,
+      "currency": "EUR",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.prolite.month",
+      "taxType": "vat",
+      "taxPercent": 19,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 100",
+      "displayPrice": "€103.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "bcb0f3a0e0edf695f755e5b65d8cc1222457d16a213c244c32287dbba0aed15b",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-de-bcb0f3a0e0edf695",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+        "note": "官方配置 currency_config.prolite.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+        "note": "currency_config.prolite.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "EUR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-de-pro-200",
+      "region": "de",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-200",
+      "amount": 229,
+      "currency": "EUR",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.pro.month",
+      "taxType": "vat",
+      "taxPercent": 19,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 200",
+      "displayPrice": "€229.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "bcb0f3a0e0edf695f755e5b65d8cc1222457d16a213c244c32287dbba0aed15b",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-de-bcb0f3a0e0edf695",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+        "note": "官方配置 currency_config.pro.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+        "note": "currency_config.pro.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "EUR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
+    },
+    {
+      "id": "web-de-pro-500",
+      "region": "de",
+      "channel": "web",
+      "scope": "official_configuration",
+      "planId": "pro-500",
+      "amount": 510,
+      "currency": "EUR",
+      "period": "month",
+      "taxStatus": "included",
+      "offerType": "standard",
+      "sourcePath": "currency_config.promax.month",
+      "taxType": "vat",
+      "taxPercent": 19,
+      "pricingRolloutGate": null,
+      "checkoutEligibility": "not_verified",
+      "sourceName": "ChatGPT Pro 500",
+      "displayPrice": "€510.00",
+      "verification": "official_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceSha256": "bcb0f3a0e0edf695f755e5b65d8cc1222457d16a213c244c32287dbba0aed15b",
+      "sourceHashKind": "canonical_json",
+      "sourceDocumentId": "web-de-bcb0f3a0e0edf695",
+      "origin": "official_checkout_config",
+      "periodEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+        "note": "官方配置 currency_config.promax.month，明确月度标准金额。"
+      },
+      "taxEvidence": {
+        "url": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+        "note": "currency_config.promax.month.tax=inclusive"
+      },
+      "currencyEvidence": {
+        "value": "EUR",
+        "scope": "official_config",
+        "path": "currency_config.symbol_code",
+        "inferredForIap": false
+      }
     }
   ],
   "ranges": [
@@ -15922,28 +17362,7 @@
       "sourceUrl": "https://learn.chatgpt.com/docs/pricing"
     },
     {
-      "code": "us",
-      "channel": "web",
-      "status": "needs_checkout",
-      "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
-      "sourceUrl": "https://chatgpt.com/pricing/"
-    },
-    {
-      "code": "ca",
-      "channel": "web",
-      "status": "needs_checkout",
-      "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
-      "sourceUrl": "https://chatgpt.com/pricing/"
-    },
-    {
       "code": "mx",
-      "channel": "web",
-      "status": "needs_checkout",
-      "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
-      "sourceUrl": "https://chatgpt.com/pricing/"
-    },
-    {
-      "code": "br",
       "channel": "web",
       "status": "needs_checkout",
       "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
@@ -16070,20 +17489,6 @@
     },
     {
       "code": "bb",
-      "channel": "web",
-      "status": "needs_checkout",
-      "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
-      "sourceUrl": "https://chatgpt.com/pricing/"
-    },
-    {
-      "code": "gb",
-      "channel": "web",
-      "status": "needs_checkout",
-      "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
-      "sourceUrl": "https://chatgpt.com/pricing/"
-    },
-    {
-      "code": "de",
       "channel": "web",
       "status": "needs_checkout",
       "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
@@ -16342,20 +17747,6 @@
       "sourceUrl": "https://chatgpt.com/pricing/"
     },
     {
-      "code": "tr",
-      "channel": "web",
-      "status": "needs_checkout",
-      "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
-      "sourceUrl": "https://chatgpt.com/pricing/"
-    },
-    {
-      "code": "jp",
-      "channel": "web",
-      "status": "needs_checkout",
-      "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
-      "sourceUrl": "https://chatgpt.com/pricing/"
-    },
-    {
       "code": "kr",
       "channel": "web",
       "status": "needs_checkout",
@@ -16371,13 +17762,6 @@
     },
     {
       "code": "hk",
-      "channel": "web",
-      "status": "needs_checkout",
-      "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
-      "sourceUrl": "https://chatgpt.com/pricing/"
-    },
-    {
-      "code": "in",
       "channel": "web",
       "status": "needs_checkout",
       "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
@@ -16420,13 +17804,6 @@
     },
     {
       "code": "vn",
-      "channel": "web",
-      "status": "needs_checkout",
-      "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
-      "sourceUrl": "https://chatgpt.com/pricing/"
-    },
-    {
-      "code": "pk",
       "channel": "web",
       "status": "needs_checkout",
       "reason": "地区结账价格未通过公开来源核验；支持带证据的人工报价。",
@@ -18456,6 +19833,78 @@
       "observedAt": "2026-10-24T05:05:17.157Z",
       "count": 5,
       "sourceUrl": "https://apps.apple.com/ng/app/chatgpt/id6448311069"
+    },
+    {
+      "channel": "web",
+      "code": "in",
+      "status": "official_config",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+      "count": 4
+    },
+    {
+      "channel": "web",
+      "code": "us",
+      "status": "official_config",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+      "count": 4
+    },
+    {
+      "channel": "web",
+      "code": "jp",
+      "status": "official_config",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+      "count": 4
+    },
+    {
+      "channel": "web",
+      "code": "gb",
+      "status": "official_config",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+      "count": 4
+    },
+    {
+      "channel": "web",
+      "code": "ca",
+      "status": "official_config",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+      "count": 4
+    },
+    {
+      "channel": "web",
+      "code": "br",
+      "status": "official_config",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+      "count": 4
+    },
+    {
+      "channel": "web",
+      "code": "tr",
+      "status": "official_config",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+      "count": 4
+    },
+    {
+      "channel": "web",
+      "code": "pk",
+      "status": "official_config",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+      "count": 4
+    },
+    {
+      "channel": "web",
+      "code": "de",
+      "status": "official_config",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+      "count": 4
     }
   ],
   "collectionSummary": {
@@ -18466,5 +19915,1362 @@
       "web": 1
     },
     "recordedFailures": 1
+  },
+  "documents": {
+    "web-in-d96438286424645f": {
+      "kind": "official_checkout_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/IN",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sha256": "d96438286424645fe4f0dca111b3c0d84155c12b94ec1c672ecfd04d3d49f20b",
+      "hashKind": "canonical_json",
+      "retrievedVia": "OpenAI web retrieval tool; exact official JSON endpoint",
+      "body": {
+        "country_code": "IN",
+        "currency_config": {
+          "free": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "go": {
+            "month": {
+              "amount": 399,
+              "tax": "inclusive"
+            }
+          },
+          "plus": {
+            "month": {
+              "amount": 1999,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 1694.07,
+                "tax": "exclusive"
+              }
+            },
+            "year": {
+              "amount": 1665.83,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 1411.72,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "pro": {
+            "month": {
+              "amount": 19900,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 16864.41,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "business": {
+            "month": {
+              "amount": 2250,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 1800,
+              "tax": "exclusive"
+            }
+          },
+          "amount_per_credit": 3.4,
+          "vat_display": {
+            "inclusive_tax_display": "tax_name_only",
+            "exclusive_tax_display": "tax_name_only",
+            "show_reverse_charge_disclaimer": true
+          },
+          "tax_type": "gst",
+          "symbol_code": "INR",
+          "promos": {
+            "business_free_trial": {
+              "enabled": true,
+              "type": "value",
+              "amount": 0,
+              "cost_message": "0*"
+            },
+            "business_one_dollar": {
+              "enabled": true,
+              "type": "value",
+              "amount": 100,
+              "cost_message": "100*"
+            },
+            "plus_intro_offer_3m": {
+              "enabled": false
+            },
+            "plus_intro_offer_12m": {
+              "enabled": false
+            }
+          },
+          "tax_percent": 18,
+          "symbol": "₹",
+          "free_workspace": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "minor_unit_exponent": 2,
+          "business_non_profit": {
+            "month": {
+              "amount": 920,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 735,
+              "tax": "exclusive"
+            }
+          },
+          "prolite": {
+            "month": {
+              "amount": 10699,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 9066.95,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "sci": {
+            "month": {
+              "amount": 19900,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 16864.41,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "business_prolite": {
+            "month": {
+              "amount": 11250,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 9000,
+              "tax": "exclusive"
+            }
+          },
+          "promax": {
+            "month": {
+              "amount": 52900,
+              "tax": "inclusive"
+            }
+          }
+        }
+      }
+    },
+    "web-us-7c7580caba97428c": {
+      "kind": "official_checkout_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/US",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sha256": "7c7580caba97428ca1719c569b7b938f62efd7bd58b4d9d5db6311c5c805cb62",
+      "hashKind": "canonical_json",
+      "retrievedVia": "OpenAI web retrieval tool; exact official JSON endpoint",
+      "body": {
+        "country_code": "US",
+        "currency_config": {
+          "free": {
+            "month": {
+              "tax": "exclusive",
+              "amount": 0
+            }
+          },
+          "go": {
+            "month": {
+              "amount": 8,
+              "tax": "exclusive"
+            }
+          },
+          "plus": {
+            "month": {
+              "amount": 20,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 16.67,
+              "tax": "exclusive"
+            }
+          },
+          "pro": {
+            "month": {
+              "amount": 200,
+              "tax": "exclusive"
+            }
+          },
+          "business": {
+            "month": {
+              "amount": 25,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 20,
+              "tax": "exclusive"
+            }
+          },
+          "amount_per_credit": 0.04,
+          "vat_display": {
+            "inclusive_tax_display": "none",
+            "exclusive_tax_display": "none",
+            "show_reverse_charge_disclaimer": false
+          },
+          "tax_type": "other",
+          "symbol_code": "USD",
+          "promos": {
+            "business_free_trial": {
+              "enabled": true,
+              "type": "value",
+              "amount": 0,
+              "cost_message": "0*"
+            },
+            "business_one_dollar": {
+              "enabled": true,
+              "type": "value",
+              "amount": 1,
+              "cost_message": "1*"
+            },
+            "plus_intro_offer_3m": {
+              "enabled": true,
+              "type": "value",
+              "amount": 10
+            },
+            "plus_intro_offer_12m": {
+              "enabled": true,
+              "type": "value",
+              "amount": 10
+            }
+          },
+          "symbol": "$",
+          "free_workspace": {
+            "month": {
+              "tax": "exclusive",
+              "amount": 0
+            }
+          },
+          "minor_unit_exponent": 2,
+          "business_non_profit": {
+            "month": {
+              "amount": 10,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 8,
+              "tax": "exclusive"
+            }
+          },
+          "prolite": {
+            "month": {
+              "amount": 100,
+              "tax": "exclusive"
+            }
+          },
+          "sci": {
+            "month": {
+              "amount": 200,
+              "tax": "exclusive"
+            }
+          },
+          "business_prolite": {
+            "month": {
+              "amount": 125,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 100,
+              "tax": "exclusive"
+            }
+          },
+          "codex_rate_limit_reset": {
+            "plus": {
+              "high": {
+                "amount": 8,
+                "tax": "exclusive"
+              },
+              "low": {
+                "amount": 5,
+                "tax": "exclusive"
+              }
+            },
+            "prolite": {
+              "high": {
+                "amount": 40,
+                "tax": "exclusive"
+              },
+              "low": {
+                "amount": 25,
+                "tax": "exclusive"
+              }
+            },
+            "pro": {
+              "high": {
+                "amount": 80,
+                "tax": "exclusive"
+              },
+              "low": {
+                "amount": 50,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "promax": {
+            "month": {
+              "amount": 500,
+              "tax": "exclusive"
+            }
+          }
+        }
+      }
+    },
+    "web-jp-6711afb4cec5f507": {
+      "kind": "official_checkout_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/JP",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sha256": "6711afb4cec5f50753b1b3408b12eee620c8d264094f7020edbb32dec72a5028",
+      "hashKind": "canonical_json",
+      "retrievedVia": "OpenAI web retrieval tool; exact official JSON endpoint",
+      "body": {
+        "country_code": "JP",
+        "currency_config": {
+          "free": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "go": {
+            "month": {
+              "amount": 1400,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 1273,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "plus": {
+            "month": {
+              "amount": 3000,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 2727,
+                "tax": "exclusive"
+              }
+            },
+            "year": {
+              "amount": 2500,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 2272.73,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "pro": {
+            "month": {
+              "amount": 30000,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 27273,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "business": {
+            "month": {
+              "amount": 3850,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 3050,
+              "tax": "exclusive"
+            }
+          },
+          "amount_per_credit": 6.2,
+          "vat_display": {
+            "inclusive_tax_display": "tax_name_only",
+            "exclusive_tax_display": "tax_name_only",
+            "show_reverse_charge_disclaimer": false
+          },
+          "tax_type": "jct",
+          "symbol_code": "JPY",
+          "promos": {
+            "business_free_trial": {
+              "enabled": true,
+              "type": "value",
+              "amount": 0,
+              "cost_message": "0*"
+            },
+            "business_one_dollar": {
+              "enabled": false
+            },
+            "plus_intro_offer_3m": {
+              "enabled": false
+            },
+            "plus_intro_offer_12m": {
+              "enabled": false
+            }
+          },
+          "pricing_rollout_gate": "is_pricing_enabled_for_jpy",
+          "tax_percent": 10,
+          "symbol": "¥",
+          "free_workspace": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "business_non_profit": {
+            "month": {
+              "amount": 1530,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 1225,
+              "tax": "exclusive"
+            }
+          },
+          "prolite": {
+            "month": {
+              "amount": 16800,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 15272.73,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "sci": {
+            "month": {
+              "amount": 30000,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 27273,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "business_prolite": {
+            "month": {
+              "amount": 19250,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 15250,
+              "tax": "exclusive"
+            }
+          },
+          "codex_rate_limit_reset": {
+            "plus": {
+              "high": {
+                "amount": 1200,
+                "tax": "inclusive",
+                "psp_override": {
+                  "amount": 1091,
+                  "tax": "exclusive"
+                }
+              },
+              "low": {
+                "amount": 750,
+                "tax": "inclusive",
+                "psp_override": {
+                  "amount": 682,
+                  "tax": "exclusive"
+                }
+              }
+            },
+            "prolite": {
+              "high": {
+                "amount": 6720,
+                "tax": "inclusive",
+                "psp_override": {
+                  "amount": 6109,
+                  "tax": "exclusive"
+                }
+              },
+              "low": {
+                "amount": 4200,
+                "tax": "inclusive",
+                "psp_override": {
+                  "amount": 3818,
+                  "tax": "exclusive"
+                }
+              }
+            },
+            "pro": {
+              "high": {
+                "amount": 12000,
+                "tax": "inclusive",
+                "psp_override": {
+                  "amount": 10909,
+                  "tax": "exclusive"
+                }
+              },
+              "low": {
+                "amount": 7500,
+                "tax": "inclusive",
+                "psp_override": {
+                  "amount": 6818,
+                  "tax": "exclusive"
+                }
+              }
+            }
+          },
+          "promax": {
+            "month": {
+              "amount": 84000,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 76364,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "minor_unit_exponent": 0
+        }
+      }
+    },
+    "web-gb-fe230e6756d13c76": {
+      "kind": "official_checkout_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/GB",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sha256": "fe230e6756d13c764fe87d791fae1280d29f065dab6bd2cb0dc2ee1fb47917d5",
+      "hashKind": "canonical_json",
+      "retrievedVia": "OpenAI web retrieval tool; exact official JSON endpoint",
+      "body": {
+        "country_code": "GB",
+        "currency_config": {
+          "free": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "go": {
+            "month": {
+              "amount": 7,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 5.83,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "plus": {
+            "month": {
+              "amount": 20,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 16.67,
+                "tax": "exclusive"
+              }
+            },
+            "year": {
+              "amount": 16.67,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 13.89,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "pro": {
+            "month": {
+              "amount": 200,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 166.67,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "business": {
+            "month": {
+              "amount": 18,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 15,
+              "tax": "exclusive"
+            }
+          },
+          "amount_per_credit": 0.04,
+          "vat_display": {
+            "inclusive_tax_display": "with_amount",
+            "exclusive_tax_display": "tax_name_only",
+            "show_reverse_charge_disclaimer": true
+          },
+          "tax_type": "vat",
+          "symbol_code": "GBP",
+          "promos": {
+            "business_free_trial": {
+              "enabled": true,
+              "type": "value",
+              "amount": 0,
+              "cost_message": "0*"
+            },
+            "business_one_dollar": {
+              "enabled": true,
+              "type": "value",
+              "amount": 1,
+              "cost_message": "1*"
+            },
+            "plus_intro_offer_3m": {
+              "enabled": true,
+              "type": "percentage",
+              "amount": 52.18
+            },
+            "plus_intro_offer_12m": {
+              "enabled": true,
+              "type": "percentage",
+              "amount": 52.18
+            }
+          },
+          "tax_percent": 20,
+          "symbol": "£",
+          "free_workspace": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "minor_unit_exponent": 2,
+          "business_non_profit": {
+            "month": {
+              "amount": 7.25,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 5.8,
+              "tax": "exclusive"
+            }
+          },
+          "prolite": {
+            "month": {
+              "amount": 89,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 74.17,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "sci": {
+            "month": {
+              "amount": 200,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 166.67,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "business_prolite": {
+            "month": {
+              "amount": 90,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 75,
+              "tax": "exclusive"
+            }
+          },
+          "promax": {
+            "month": {
+              "amount": 445,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 370.83,
+                "tax": "exclusive"
+              }
+            }
+          }
+        }
+      }
+    },
+    "web-ca-5c4c73ba84f5370f": {
+      "kind": "official_checkout_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/CA",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sha256": "5c4c73ba84f5370f5ca00bb4aef64ebdcceff921931011a50c5b939c2a200a77",
+      "hashKind": "canonical_json",
+      "retrievedVia": "OpenAI web retrieval tool; exact official JSON endpoint",
+      "body": {
+        "country_code": "CA",
+        "currency_config": {
+          "free": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "go": {
+            "month": {
+              "amount": 11,
+              "tax": "exclusive"
+            }
+          },
+          "plus": {
+            "month": {
+              "amount": 25,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 20.83,
+              "tax": "exclusive"
+            }
+          },
+          "pro": {
+            "month": {
+              "amount": 250,
+              "tax": "exclusive"
+            }
+          },
+          "business": {
+            "month": {
+              "amount": 34,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 27,
+              "tax": "exclusive"
+            }
+          },
+          "amount_per_credit": 0.056,
+          "vat_display": {
+            "inclusive_tax_display": "none",
+            "exclusive_tax_display": "none",
+            "show_reverse_charge_disclaimer": false
+          },
+          "tax_type": "other",
+          "symbol_code": "CAD",
+          "promos": {
+            "business_free_trial": {
+              "enabled": true,
+              "type": "value",
+              "amount": 0,
+              "cost_message": "0*"
+            },
+            "business_one_dollar": {
+              "enabled": false
+            },
+            "plus_intro_offer_3m": {
+              "enabled": false
+            },
+            "plus_intro_offer_12m": {
+              "enabled": false
+            }
+          },
+          "pricing_rollout_gate": "is_pricing_enabled_for_cad",
+          "symbol": "CA$",
+          "free_workspace": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "minor_unit_exponent": 2,
+          "business_non_profit": {
+            "month": {
+              "amount": 13.5,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 10.85,
+              "tax": "exclusive"
+            }
+          },
+          "prolite": {
+            "month": {
+              "amount": 136,
+              "tax": "exclusive"
+            }
+          },
+          "sci": {
+            "month": {
+              "amount": 250,
+              "tax": "exclusive"
+            }
+          },
+          "business_prolite": {
+            "month": {
+              "amount": 170,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 135,
+              "tax": "exclusive"
+            }
+          },
+          "promax": {
+            "month": {
+              "amount": 680,
+              "tax": "exclusive"
+            }
+          }
+        }
+      }
+    },
+    "web-br-14aba1bb677f1c39": {
+      "kind": "official_checkout_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/BR",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sha256": "14aba1bb677f1c39efa554289ca423c581e49028a9a140c2f2abd1e540815201",
+      "hashKind": "canonical_json",
+      "retrievedVia": "OpenAI web retrieval tool; exact official JSON endpoint",
+      "body": {
+        "country_code": "BR",
+        "currency_config": {
+          "free": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "go": {
+            "month": {
+              "amount": 39.99,
+              "tax": "exclusive"
+            }
+          },
+          "plus": {
+            "month": {
+              "amount": 99.9,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 83.25,
+              "tax": "exclusive"
+            }
+          },
+          "pro": {
+            "month": {
+              "amount": 999.9,
+              "tax": "exclusive"
+            }
+          },
+          "business": {
+            "month": {
+              "amount": 130,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 100,
+              "tax": "exclusive"
+            }
+          },
+          "amount_per_credit": 0.22,
+          "vat_display": {
+            "inclusive_tax_display": "tax_name_only",
+            "exclusive_tax_display": "tax_name_only",
+            "show_reverse_charge_disclaimer": false
+          },
+          "tax_type": "vat",
+          "symbol_code": "BRL",
+          "promos": {
+            "business_free_trial": {
+              "enabled": true,
+              "type": "value",
+              "amount": 0,
+              "cost_message": "0*"
+            },
+            "business_one_dollar": {
+              "type": "value",
+              "amount": 5,
+              "cost_message": "5*",
+              "enabled": false
+            },
+            "plus_intro_offer_3m": {
+              "enabled": false
+            },
+            "plus_intro_offer_12m": {
+              "enabled": false
+            }
+          },
+          "pricing_rollout_gate": "is_pricing_enabled_for_brl",
+          "tax_percent": 0,
+          "symbol": "R$",
+          "free_workspace": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "minor_unit_exponent": 2,
+          "business_non_profit": {
+            "month": {
+              "amount": 52,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 42,
+              "tax": "exclusive"
+            }
+          },
+          "prolite": {
+            "month": {
+              "amount": 525,
+              "tax": "inclusive"
+            }
+          },
+          "sci": {
+            "month": {
+              "amount": 999.9,
+              "tax": "exclusive"
+            }
+          },
+          "business_prolite": {
+            "month": {
+              "amount": 650,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 500,
+              "tax": "exclusive"
+            }
+          },
+          "promax": {
+            "month": {
+              "amount": 2600,
+              "tax": "exclusive"
+            }
+          }
+        }
+      }
+    },
+    "web-tr-56085e2c52b4cd4d": {
+      "kind": "official_checkout_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/TR",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sha256": "56085e2c52b4cd4d60f82f95b347cc4c594f5c4ebaa4a57628730071785f316e",
+      "hashKind": "canonical_json",
+      "retrievedVia": "OpenAI web retrieval tool; exact official JSON endpoint",
+      "body": {
+        "country_code": "TR",
+        "currency_config": {
+          "free": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "go": {
+            "month": {
+              "amount": 6,
+              "tax": "inclusive"
+            }
+          },
+          "plus": {
+            "month": {
+              "amount": 20,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 16.67,
+              "tax": "inclusive"
+            }
+          },
+          "pro": {
+            "month": {
+              "amount": 200,
+              "tax": "exclusive"
+            }
+          },
+          "business": {
+            "month": {
+              "amount": 25,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 20,
+              "tax": "exclusive"
+            }
+          },
+          "amount_per_credit": 0.04,
+          "vat_display": {
+            "inclusive_tax_display": "none",
+            "exclusive_tax_display": "none",
+            "show_reverse_charge_disclaimer": false
+          },
+          "tax_type": "vat",
+          "symbol_code": "USD",
+          "promos": {
+            "business_free_trial": {
+              "enabled": true,
+              "type": "value",
+              "amount": 0,
+              "cost_message": "0*"
+            },
+            "business_one_dollar": {
+              "enabled": true,
+              "type": "value",
+              "amount": 1,
+              "cost_message": "1*"
+            },
+            "plus_intro_offer_3m": {
+              "enabled": true,
+              "type": "value",
+              "amount": 10
+            },
+            "plus_intro_offer_12m": {
+              "enabled": true,
+              "type": "value",
+              "amount": 10
+            }
+          },
+          "tax_percent": 20,
+          "symbol": "$",
+          "free_workspace": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "minor_unit_exponent": 2,
+          "business_non_profit": {
+            "month": {
+              "amount": 10,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 8,
+              "tax": "exclusive"
+            }
+          },
+          "prolite": {
+            "month": {
+              "amount": 120,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 100,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "sci": {
+            "month": {
+              "amount": 200,
+              "tax": "exclusive"
+            }
+          },
+          "business_prolite": {
+            "month": {
+              "amount": 125,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 100,
+              "tax": "exclusive"
+            }
+          },
+          "promax": {
+            "month": {
+              "amount": 600,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 500,
+                "tax": "exclusive"
+              }
+            }
+          }
+        }
+      }
+    },
+    "web-pk-359e06497f396567": {
+      "kind": "official_checkout_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/PK",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sha256": "359e06497f396567abcecd34a6c21a6544c54070b0fa346452ca0085d38da0a2",
+      "hashKind": "canonical_json",
+      "retrievedVia": "OpenAI web retrieval tool; exact official JSON endpoint",
+      "body": {
+        "country_code": "PK",
+        "currency_config": {
+          "free": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "go": {
+            "month": {
+              "amount": 1400,
+              "tax": "inclusive"
+            }
+          },
+          "plus": {
+            "month": {
+              "amount": 5700,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 4750,
+              "tax": "exclusive"
+            }
+          },
+          "pro": {
+            "month": {
+              "amount": 49900,
+              "tax": "exclusive"
+            }
+          },
+          "business": {
+            "month": {
+              "amount": 7000,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 5600,
+              "tax": "exclusive"
+            }
+          },
+          "amount_per_credit": 11.2,
+          "vat_display": {
+            "inclusive_tax_display": "tax_name_only",
+            "exclusive_tax_display": "tax_name_only",
+            "show_reverse_charge_disclaimer": true
+          },
+          "tax_type": "vat",
+          "symbol_code": "PKR",
+          "promos": {
+            "business_free_trial": {
+              "enabled": true,
+              "type": "value",
+              "amount": 0,
+              "cost_message": "0*"
+            },
+            "business_one_dollar": {
+              "enabled": true,
+              "type": "value",
+              "amount": 280,
+              "cost_message": "280*"
+            },
+            "plus_intro_offer_3m": {
+              "enabled": false
+            },
+            "plus_intro_offer_12m": {
+              "enabled": false
+            }
+          },
+          "tax_percent": 0,
+          "symbol": "₨",
+          "free_workspace": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "minor_unit_exponent": 2,
+          "business_non_profit": {
+            "month": {
+              "amount": 2799,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 2230,
+              "tax": "exclusive"
+            }
+          },
+          "prolite": {
+            "month": {
+              "amount": 27999,
+              "tax": "inclusive"
+            }
+          },
+          "business_prolite": {
+            "month": {
+              "amount": 35000,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 28000,
+              "tax": "exclusive"
+            }
+          },
+          "promax": {
+            "month": {
+              "amount": 139999,
+              "tax": "inclusive"
+            }
+          }
+        }
+      }
+    },
+    "web-de-bcb0f3a0e0edf695": {
+      "kind": "official_checkout_config",
+      "sourceUrl": "https://chatgpt.com/backend-anon/checkout_pricing_config/configs/DE",
+      "observedAt": "2026-10-24T06:00:42.809Z",
+      "sha256": "bcb0f3a0e0edf695f755e5b65d8cc1222457d16a213c244c32287dbba0aed15b",
+      "hashKind": "canonical_json",
+      "retrievedVia": "OpenAI web retrieval tool; exact official JSON endpoint",
+      "body": {
+        "country_code": "DE",
+        "currency_config": {
+          "free": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "go": {
+            "month": {
+              "amount": 8,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 6.72,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "plus": {
+            "month": {
+              "amount": 23,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 19.33,
+                "tax": "exclusive"
+              }
+            },
+            "year": {
+              "amount": 19.17,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 16.11,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "pro": {
+            "month": {
+              "amount": 229,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 192.44,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "business": {
+            "month": {
+              "amount": 26,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 21.85,
+                "tax": "exclusive"
+              }
+            },
+            "year": {
+              "amount": 21,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 17.65,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "amount_per_credit": 0.04,
+          "vat_display": {
+            "inclusive_tax_display": "with_amount",
+            "exclusive_tax_display": "tax_name_only",
+            "show_reverse_charge_disclaimer": true
+          },
+          "tax_type": "vat",
+          "symbol_code": "EUR",
+          "promos": {
+            "business_free_trial": {
+              "enabled": true,
+              "type": "value",
+              "amount": 0,
+              "cost_message": "0*"
+            },
+            "business_one_dollar": {
+              "enabled": true,
+              "type": "value",
+              "amount": 1,
+              "cost_message": "1*"
+            },
+            "plus_intro_offer_3m": {
+              "enabled": true,
+              "type": "percentage",
+              "amount": 52.18
+            },
+            "plus_intro_offer_12m": {
+              "enabled": true,
+              "type": "percentage",
+              "amount": 52.18
+            }
+          },
+          "tax_percent": 19,
+          "symbol": "€",
+          "free_workspace": {
+            "month": {
+              "tax": "inclusive",
+              "amount": 0
+            }
+          },
+          "minor_unit_exponent": 2,
+          "business_non_profit": {
+            "month": {
+              "amount": 10,
+              "tax": "exclusive"
+            },
+            "year": {
+              "amount": 8,
+              "tax": "exclusive"
+            }
+          },
+          "prolite": {
+            "month": {
+              "amount": 103,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 86.55,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "sci": {
+            "month": {
+              "amount": 229,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 192.44,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "business_prolite": {
+            "month": {
+              "amount": 130,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 109.24,
+                "tax": "exclusive"
+              }
+            },
+            "year": {
+              "amount": 105,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 88.24,
+                "tax": "exclusive"
+              }
+            }
+          },
+          "promax": {
+            "month": {
+              "amount": 510,
+              "tax": "inclusive",
+              "psp_override": {
+                "amount": 428.57,
+                "tax": "exclusive"
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

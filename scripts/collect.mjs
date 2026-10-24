@@ -5,7 +5,7 @@ import path from 'node:path';
 import { MARKETS, APP_ID, PLANS } from '../src/config.mjs';
 import { parseApple } from '../src/apple.mjs';
 import { parseAndroid } from '../src/android.mjs';
-import { parseOfficialWebBaseline, OFFICIAL_PRICE_URL } from '../src/web.mjs';
+import { parseOfficialWebBaseline, OFFICIAL_PRICE_URL,checkoutConfigUrl,makeCheckoutRecords,canonicalJson } from '../src/web.mjs';
 import { validateDataset, validateFx } from '../src/domain.mjs';
 
 const dataDir = fileURLToPath(new URL('../data/', import.meta.url));
@@ -52,6 +52,7 @@ if (!args.has('--fx-only')) {
   const previous = await readJson('prices.json', { schemaVersion: 2, observations: [], ranges: [], markets: [] });
   let observations = previous.observations.filter(r => r.origin !== 'reviewed_submission');
   let ranges = previous.ranges ?? [];
+  const documents={...(previous.documents??{})};
   const statuses = new Map(previous.markets.map(m => [`${m.channel ?? 'ios'}:${m.code}`, { ...m, channel: m.channel ?? 'ios' }]));
   const jobs = [];
   for (const channel of channelArg.filter(c => c !== 'web')) jobs.push(pool(selected, async market => {
@@ -90,13 +91,31 @@ if (!args.has('--fx-only')) {
       console.log(`web/global: ${baselines.length} official monthly USD baselines (not regional ranking)`);
       successes.web++;
     } catch (e) { failures++; const old = statuses.get('web:global'); statuses.set('web:global', { code:'global', channel:'web', status:'error', attemptedAt, observedAt:old?.observedAt??null, error:e.message, sourceUrl:OFFICIAL_PRICE_URL }); }
-    for (const m of selected) statuses.set(`web:${m.code}`, { code:m.code, channel:'web', status:'needs_checkout', reason:'地区结账价格未通过公开来源核验；支持带证据的人工报价。', sourceUrl:'https://chatgpt.com/pricing/' });
+    let regionSuccesses=0,accessFailures=0;
+    await pool(selected,async m=>{
+      const sourceUrl=checkoutConfigUrl(m.code),checkedAt=new Date().toISOString();
+      if(accessFailures>=3){const old=statuses.get(`web:${m.code}`);statuses.set(`web:${m.code}`,{code:m.code,channel:'web',status:'access_blocked',observedAt:old?.observedAt??null,reason:'自动采集环境无法读取官方接口；未刷新原观测时间。',sourceUrl});return;}
+      try{
+        const body=JSON.parse(await fetchText(sourceUrl));
+        const sha256=fingerprint(canonicalJson(body)),docId=`web-${m.code}-${sha256.slice(0,16)}`;
+        const doc={kind:'official_checkout_config',sourceUrl,observedAt:checkedAt,sha256,hashKind:'canonical_json',retrievedVia:'direct HTTPS GET of official anonymous endpoint',body};
+        const records=makeCheckoutRecords(body,m.code,docId,doc);
+        documents[docId]=doc;
+        observations=observations.filter(r=>!(r.channel==='web'&&r.region===m.code)).concat(records);
+        statuses.set(`web:${m.code}`,{code:m.code,channel:'web',status:'official_config',attemptedAt:checkedAt,observedAt:checkedAt,count:records.length,sourceUrl});
+        regionSuccesses++;successes.web++;console.log(`web/${m.code}: ${records.length} official monthly configs`);
+      }catch(e){failures++;if([401,403,429].includes(e.status)||e.message.includes('fetch failed')||e.message.includes('timeout'))accessFailures++;const old=statuses.get(`web:${m.code}`);statuses.set(`web:${m.code}`,{code:m.code,channel:'web',status:'error',attemptedAt:checkedAt,observedAt:old?.observedAt??null,error:e.message,sourceUrl});console.warn(`web/${m.code}: ${e.message}; original price date retained`);}
+    });
+    console.log(`Regional web configurations refreshed: ${regionSuccesses}/${selected.length}; official baseline success is recorded separately from regional refresh.`);
+    successes.webRegional=regionSuccesses;
   })());
   await Promise.all(jobs);
   criticalFailure = channelArg.some(c => !successes[c]);
   const manual = await readJson('quotes.json', { schemaVersion: 1, quotes: [] });
   for(const q of manual.quotes)statuses.set(`${q.channel}:${q.region}`,{code:q.region,channel:q.channel,status:'reviewed_quote',observedAt:q.observedAt,reviewedAt:q.reviewedAt,sourceUrl:q.sourceUrl});
-  const result = { schemaVersion: 2, generatedAt: new Date().toISOString(), observations: observations.concat(manual.quotes), ranges, markets: [...statuses.values()], collectionSummary: { configuredMarkets:MARKETS.length, sourceSuccesses:successes, recordedFailures:failures } };
+  const usedDocuments=new Set(observations.map(r=>r.sourceDocumentId).filter(Boolean));
+  const retainedDocuments=Object.fromEntries(Object.entries(documents).filter(([id])=>usedDocuments.has(id)));
+  const result = { schemaVersion: 3, generatedAt: new Date().toISOString(), observations: observations.concat(manual.quotes), ranges, documents:retainedDocuments, markets: [...statuses.values()], collectionSummary: { configuredMarkets:MARKETS.length, sourceSuccesses:successes, recordedFailures:failures } };
   validateDataset(result); await atomicJson('prices.json', result);
   console.log(`Total: ${result.observations.length} exact/name-specific observations; ${ranges.length} Android all-product ranges.`);
 }
